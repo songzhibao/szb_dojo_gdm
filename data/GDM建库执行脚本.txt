@@ -1,0 +1,40 @@
+一、安装 Navicat  
+
+   （1） 运行 navicat12018_premium_cs_x64.exe，来安装 Navicat
+
+     (2)   在运行 Navicat 之前，用 Navicat Premium 12 破解补丁\简体中文64位 破解文件 覆盖安装目录的这两个文件
+
+二、创建表空间
+(1)  到 数据库安装机器的 目录  D:\Program Files\PostgreSQL\10\data\ 下，创建文件夹 gdm_data
+
+(2) window 下创建 pg 数据库表空间， 用 Navicat 连接安装好的数据库。 执行下面的脚本
+
+CREATE TABLESPACE gdm_data OWNER postgres LOCATION 'D:\Program Files\PostgreSQL\10\data\gdm_data';
+ALTER TABLESPACE gdm_data OWNER TO postgres;
+GRANT CREATE ON TABLESPACE gdm_data TO postgres;
+
+三、创建数据库
+
+CREATE DATABASE gdmdb WITH OWNER = postgres ENCODING = 'UTF8' TABLESPACE = gdm_data CONNECTION LIMIT = -1;
+GRANT TEMPORARY, CONNECT ON DATABASE gdmdb TO PUBLIC;
+GRANT ALL ON DATABASE gdmdb TO postgres;
+
+四、创建用户
+
+CREATE USER gdmuser WITH LOGIN NOSUPERUSER INHERIT  CREATEDB  NOCREATEROLE  REPLICATION  VALID UNTIL 'infinity'  password 'gdmuser'
+
+五、创建模式
+
+CREATE SCHEMA IF NOT EXISTS gdm AUTHORIZATION gdmuser;
+
+六、赋予权限
+
+GRANT all ON SCHEMA gdm to gdmuser;
+
+七、创建 GIS 插件
+
+create extension postgis;
+
+八、执行 function  table view 文件夹里  SQL 创建需要的函数 、表 、视图
+
+

@@ -1,0 +1,67 @@
+﻿<div style="position: absolute; z-index: 99; bottom: 25px; left: 5px;">
+    <div style="position: relative; left: 222px; top: 23px; width: 12px; height: 11px;
+        background-image: url(/Content/themes/blue/images/缩小箭头.png); cursor: pointer"
+        data-dojo-attach-point='minimizeButton'>
+    </div>
+    <div style="width: 244px; height: 102px; background-image: url(/Content/themes/blue/images/统计信息-1.png);">
+        <div style="height: 18%; width: 100%; font-size: x-small; text-align: center; font-weight: bold;
+            padding-top: 11px;" data-dojo-attach-point='titleShowNode'>
+            ${displayName}
+        </div>
+
+    <table cellspacing="0" cellpadding="0" border="0" style="height: 70%; width: 100%; table-layout: fixed; font-size: x-small;
+            text-align: center; font-weight: bold; overflow: hidden; cursor: pointer" data-dojo-attach-point='maximizeButton'>
+        <tr>
+            <td width="38px;" rowspan="2">
+                 &nbsp;民警
+            </td>
+            <td style="text-align:right;">
+                 <span data-dojo-attach-point="util_police_manDJJ_online" title="民警对讲机在线数">0</span></td><td rowspan="2"><img title="民警对讲机"  src="/Content/themes/blue/images/police/p-32.png" style="width: 24px;" />
+            </td>
+            <td style="text-align:right;">
+                 <span data-dojo-attach-point="util_police_manJWT_online" title="民警警务通在线数">0</span></td><td rowspan="2"><img title="民警警务通"  src="/Content/themes/blue/images/police/p32.png" style="width: 24px;" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">
+              <span data-dojo-attach-point="util_police_manDJJ_onsum" title="民警对讲机总数" >0</span>
+            </td>
+            <td style="text-align:right;">
+              <span data-dojo-attach-point="util_police_manJWT_onsum" title="民警警务通总数">0</span>
+            </td>
+        </tr>
+        <tr>
+            <td width="38px;" rowspan="2">
+                &nbsp;辅警
+            </td>
+            <td style="text-align:right;">
+                <span data-dojo-attach-point="util_police_xjDJJ_online" title="辅警对讲机在线数">0</span></td><td rowspan="2"><img title="辅警对讲机" src="/Content/themes/blue/images/police/f-32.png"  style="width: 24px;" />
+            </td>
+            <td style="text-align:right;">
+                <span data-dojo-attach-point="util_police_xjJWT_online" title="辅警辅警通在线数">0</span></td><td rowspan="2"><img title="辅警辅警通" src="/Content/themes/blue/images/police/f32.png" style="width: 24px;" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">
+              <span data-dojo-attach-point="util_police_xjDJJ_onsum" title="辅警对讲机总数">0</span>
+            </td>
+            <td style="text-align:right;">
+              <span data-dojo-attach-point="util_police_xjJWT_onsum" title="辅警辅警通总数">0</span>
+            </td>
+        </tr>
+<!--        <tr>
+            <td>
+                <label>
+                   &nbsp;警车</label>
+            </td>
+            <td>
+                <label>
+                    在线：<span data-dojo-attach-point="util_police_car_online" />/总数：<span data-dojo-attach-point="util_police_car_onsum" />车载台</label></td><td><img src="/Content/themes/blue/images/police/c-32.png" width="24px" />
+
+            </td>
+            <td>
+            </td><td></td>
+        </tr>-->
+    </table>
+    </div>
+</div>

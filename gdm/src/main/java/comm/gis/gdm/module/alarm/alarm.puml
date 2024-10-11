@@ -1,0 +1,19 @@
+@startuml 灾害展示
+class AlarmServiceImpl implements AlarmService {
+    +getVideoList()
+}
+class AlarmController  {
+    +getVideoList()
+}
+class VideoInfoEntity{
+    String id
+    String code
+    String name
+    Integer type
+    Integer status
+    String address
+    Double lon
+    Double lat
+}
+AlarmController --> AlarmService
+@enduml

@@ -1,0 +1,79 @@
+﻿<#include "../Shared/_Layout.html">
+
+<@headLayout>
+
+
+    <script src="/Scripts/src/Modules/Deduce/startup_page.js" type="text/javascript"></script>
+
+</@headLayout>
+
+<@bodyLayout>
+
+<body class="claro egis">
+    <div dojotype="dijit.layout.BorderContainer" style="width: 100%; height: 100%; padding: 0px;">
+        <div dojotype="dijit.layout.ContentPane" region="left" style="width: 350px; padding: 0px; padding-top: 0px; border: 0px;" splitter="false">
+            <div dojotype="dijit.layout.BorderContainer" style="width: 100%; height: 100%;">
+                <div dojotype="dijit.TitlePane" id="leftTopContent" region="top" title="方案信息" style="border: 0px;">
+
+                    <div style="width: 100%; height: 100%; padding: 0px;">
+                        <table cellspacing="10" cellpadding="5" border="0" style="width: 100%; height: 100%; padding: 0px;">
+                            <tr>
+                                <td>方案名称:
+                                </td>
+                                <td>
+                                    <input id="guardName" data-dojo-type="dijit/form/TextBox" style="width: 145px;height: 24px;" />
+                                </td>
+                            </tr>                            
+                            <tr>
+                                <td style="width: 100px;">方案类型:
+                                </td>
+                                <td>
+                                    <select data-dojo-type="dijit/form/Select" id="guardType" style="width: 147px;height: 24px;">
+                                        <option value="10">崩塌</option>
+                                        <option value="20">滑坡</option>
+                                        <option value="30">泥石流</option>
+                                        <option value="40">水土流失</option>
+                                        <option value="0">其他类型</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>开始时间:
+                                </td>
+                                <td>
+                                    <input id="guardBegin" data-dojo-type="dijit/form/DateTextBox" data-dojo-props="constraints:{datePattern:'yyyy-MM-dd'}" style="width: 145px;height: 24px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>结束时间:
+                                </td>
+                                <td>
+                                    <input id="guardEnd" data-dojo-type="dijit/form/DateTextBox"  data-dojo-props="constraints:{datePattern:'yyyy-MM-dd'}" style="width: 145px;height: 24px;" />
+                                </td>
+                            </tr>
+
+                        </table>
+                        <div style="text-align: center;">
+                          <div id="saveButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">保 存</div>
+                          <div id="saveasButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">另 存</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div dojotype="dijit.TitlePane" id="leftButtomContent" region="center" title="方案组成" style="border: 0px;">
+                </div>
+                <div dojotype="dijit.layout.ContentPane" id="buttomContent" region="bottom" style="height: 180px; border: 0px;">
+
+                    
+
+                </div>
+            </div>
+        </div>
+        <div dojotype="dijit.layout.ContentPane" region="center" splitter="true" style="padding: 0px;">
+            <div id="stackContainer" data-dojo-type="dijit/layout/StackContainer" style="border: 0px; width: 100%; height: 100%; z-index: 5;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</@bodyLayout>

@@ -1,0 +1,31 @@
+@startuml 危点管理
+class DutyServiceImpl implements DutyService {
+    +deleteRegion()
+    +getDutyRegionList()
+    +saveRegionInfo()
+    +saveRegionEdit()
+}
+class DutyController  {
+    +deleteRegion()
+    +getDutyRegionList()
+    +saveRegionInfo()
+    +saveRegionEdit()
+}
+class DutyRegionEntity{
+    String id
+    String taskId
+    String name
+    Integer stage
+    String content
+}
+class DutyPersonEntity{
+    String id
+    String code
+    String job
+    String name
+    String phone
+    Long dutyId
+}
+DutyController --> DutyService
+DutyRegionEntity "1" *-- "many" DutyPersonEntity : children
+@enduml

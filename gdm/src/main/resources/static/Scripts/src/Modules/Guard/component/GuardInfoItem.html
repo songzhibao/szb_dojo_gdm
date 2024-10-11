@@ -1,0 +1,24 @@
+﻿<div class='${baseClass} ${class}' >
+        <table style="height:20px; border:1px;cell-padding:3px; ">
+          <tr>
+            <td>
+                <input dojoattachpoint="taskName" readonly data-dojo-type="dijit.form.TextBox" style="width:165px;border:0px;"/>
+            </td> 
+            <td>
+               从
+            </td>                    
+            <td>
+                 <input dojoattachpoint="taskBegin" readonly data-dojo-type="dijit.form.TextBox" style="width:70px;border:0px;"/>
+            </td>
+            <td>
+               至
+            </td>
+            <td>
+                 <input dojoattachpoint="taskEnd" readonly data-dojo-type="dijit.form.TextBox" style="width:70px;border:0px;"/>
+            </td>
+            <td>
+                <input dojoattachpoint="taskBH" data-dojo-type="dijit.form.TextBox" style="display:none"/><button dojoType="dijit/form/Button" dojoattachpoint="taskStart" >启动</button>&nbsp;<button dojoType="dijit/form/Button" dojoattachpoint="taskEdit" >编辑</button>&nbsp;<button dojoType="dijit/form/Button" dojoattachpoint="taskDelete" >删除</button>
+            </td>
+          </tr>
+        </table>
+</div>

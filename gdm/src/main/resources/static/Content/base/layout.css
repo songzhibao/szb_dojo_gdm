@@ -1,0 +1,1151 @@
+﻿/*main*/
+body, html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.egis
+{
+    font-size: 12px;
+}
+
+.egis .pd10
+{
+    padding: 10px;
+}
+
+.egis div.olMapViewport
+{
+    
+}
+
+.egis .image-button
+{
+    text-align: center;
+}
+
+.egis div {
+    outline: none;
+}
+
+
+.egis .egisopenlayersBaseLayerSwitchControl
+{
+    top: 120px;
+    right: 25px;
+    
+}
+
+.egis .olControlScale
+{
+    right: 10px;
+    bottom: 50px;
+}
+
+.egis .top
+{
+    position: absolute;
+    width: 100%;
+    background: url(images/topbg.png) repeat-x 0 0;
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.egis .footer
+{
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    background: url(images/footbg.png) repeat-x 0 0;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.egis .caseTypeTree
+{
+    height: 300px;
+}
+
+.egis #stackController
+{
+    display: block;
+    padding: 7px;
+    float: left;
+}
+
+.egis #stackController .dijitToggleButton
+{
+    margin-right: 10px;
+}
+
+.egis #bottomToolbar
+{
+    float: right;
+}
+
+.egis .bottomMenuBar
+{
+    position: fixed;
+    right: 13px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.egis .bottomMenuBarIcon
+{
+    float: right;
+    margin-left: 8px;
+    margin-top: 9px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.egis .dojoxGridScrollbox
+{
+    overflow-x: hidden;
+}
+
+.egis .add-map
+{
+    background: url(images/add-map.png);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.egis .add-map:hover
+{
+    background: url(images/add-map.png) -24px 0;
+}
+
+.egis .claro .dijitTabContainerTop-tabs .dijitTab {
+    min-width: 40px;
+}
+
+/*AnalysisPane*/
+/* File Created: 九月 29, 2013 */
+
+.egis .analysis-floating-pane {
+    width: 320px;
+}
+
+.egis .analysis-floating-pane hr
+{
+    margin: 12px 0;
+    background: #C8C8C8;
+    
+    height: 1px;
+    border: 0;
+}
+
+.egis .analysis-floating-pane .query-item .name {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.egis .analysis-floating-pane .query-item .shortcut-text
+{
+    margin-top: 5px;
+    margin-left: 3em;
+}
+
+
+.egis .analysis-floating-pane .dijitTextBox {
+    width: 250px;
+}
+
+.egis .analysis-floating-pane .analysis-icon-bg
+{
+    background: url(images/analysis-icon-bg.png);
+    width: 28px;
+    height: 28px;
+}
+
+.egis .analysis-floating-pane .analysis-icon
+{
+    float: left;
+    margin-right: 8px;
+}
+
+.egis .analysis-floating-pane .shortcut-container
+{
+    float: left;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.egis .analysis-floating-pane .bottom-area-box
+{
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 8px;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .bl-area
+{
+    float: left;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .br-area
+{
+    float: right;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .dijitButton
+{
+    float: right;
+    margin-left: 7px;
+}
+
+.egis .case-condition-pane {
+}
+
+.egis .case-condition-pane .time-pane
+{
+    height: 100px;
+    padding: 8px;
+}
+
+.egis .case-condition-pane .period-picker
+{
+    margin-top: 8px;
+}
+
+.egis .case-condition-pane .time-pane .dijitTabPaneWrapper,
+.egis .hotmap-condition-pane .time-pane .dijitTabPaneWrapper
+{
+    padding: 8px;
+}
+
+
+/*CaseResultPane*/
+.egis .caesResultPaneTitle
+{
+    background: #286aab;
+    height: 25px;
+    border: 0px solid #BFBFBF;
+    white-space: nowrap;
+}
+
+
+/*DropDownMenu*/
+.egis .dropDownMenuPosition
+{
+    position: absolute;
+    width: 84px;
+    z-index: 100;
+}
+
+.egis .dropDownMenuConnector
+{
+    position: absolute;
+    border: 0;
+    z-index: 10;
+    background-image: url("images/mapoverview/tooltip.png");
+    background-repeat: no-repeat;
+    background-position: -31px 0;
+    top: -13px;
+    left: 31px;
+    width: 16px;
+    height: 14px;
+}
+
+/*MapContextMenu*/
+
+.egis .prevViewIcon
+{
+    background: url(images/contextmenu/prev-view.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .nextViewIcon
+{
+    background: url(images/contextmenu/next-view.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .lineMeasureIcon
+{
+    background: url(images/contextmenu/measure-line.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .areaMeasureIcon
+{
+    background: url(images/contextmenu/measure-area.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .fullExtentIcon
+{
+    background: url(images/contextmenu/full-extent.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .zoomInIcon
+{
+    background: url(images/contextmenu/zoom_in.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .zoomOutIcon
+{
+    background: url(images/contextmenu/zoom_out.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .cleanMapIcon
+{
+    background: url(images/contextmenu/clear.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .stalkingIcon
+{
+    background: url(images/contextmenu/stalking.png);
+    width: 16px;
+    height: 16px;
+}
+
+/*MapFloatingPane*/
+
+.egis .mapFloatingPane
+{
+    position: absolute;
+    z-index: 100;
+    background: url('images/floatingpane/winbg.png') repeat-x 0 0;
+    border: 1px solid #43a3fe;
+    padding: 4px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneCanvas
+{
+    padding: 8px;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneTitle
+{
+    background: none;
+    height: 30px;
+    border: 0px solid #BFBFBF;
+    padding: 4px 4px 2px;
+    white-space: nowrap;
+    cursor: move;
+}
+
+.egis .mapFloatingPane .mapFloatingCloseIcon
+{
+    background: url('images/floatingpane/win_c.png') no-repeat scroll center center transparent;
+    float: right;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.egis .mapFloatingPane .mapFloatingMinimizeIcon
+{
+    background: url('images/floatingpane/win_s.png') no-repeat scroll 0 center transparent;
+    float: right;
+    margin: 0 4px;
+    overflow: hidden;
+    width: 12px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 7px;
+}
+
+.egis .mapFloatingPane .mapFloatingMaximizeIcon
+{
+    background: url('images/floatingpane/spriteArrows.png') no-repeat -21px center;
+    width: 7px;
+    margin: 0px 4px;
+    overflow: hidden;
+    float: right;
+    display: none;
+}
+
+.egis .mapFloatingPane .mapFloatingRestoreIcon
+{
+    background: url('images/floatingpane/spriteArrows.png') no-repeat 0px center;
+    width: 7px;
+    margin: 0px 4px;
+    float: right;
+    display: none;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneCanvas
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.7) 100%);
+    border-radius: 2px;
+}
+
+
+.egis .mapFloatingPane .mapFloatingCaseAddressOnIcon
+{
+    background: url('images/case/address-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 70px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseAddressOffIcon
+{
+    background: url('images/case/address-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 70px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTypeOnIcon
+{
+    background: url('images/case/casetype-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTypeOffIcon
+{
+    background: url('images/case/casetype-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTimeOnIcon
+{
+    background: url('images/case/time-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTimeOffIcon
+{
+    background: url('images/case/time-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.egis .mapFloatingPane .mapFloatingTitleText
+{
+    border: 0px;
+    padding: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #125f92;
+    white-space: nowrap;
+    display: inline-block;
+    float: left;
+}
+
+.egis .mapFloatingPane.dojoxFloatingPaneFg {
+    background: url('images/floatingpane/winbg-float.png') repeat-x 0 0;
+}
+
+.egis .mapFloatingPane.dojoxFloatingPaneFg .mapFloatingTitleText {
+    color:#fff;
+}
+
+.egis .mapFloatingPane .dojoxFloatingPaneContent {
+    background: none;
+}
+
+.egis .mapFloatingPane input.dijitArrowButtonInner{
+    height: 24px !important;
+}
+.egis .mapFloatingPane .dijitInputInner {
+    height: 24px;
+}
+
+/*MapOverview*/
+
+
+
+.egis .mapOverviewPosition
+{
+    position: absolute;
+    z-index: 9999;
+}
+
+.egis .mapOverviewPosition .olControlOverviewMapElement
+{
+    padding: 0;
+    background: White;
+}
+
+.egis .mapOverviewPosition .olMap
+{
+    width: 220px;
+    height: 220px;
+}
+
+.egis .mapOverviewConnector
+{
+    position: absolute;
+    border: 0;
+    z-index: 10;
+    background-image: url("images/mapoverview/tooltip.png");
+    background-repeat: no-repeat;
+    background-position: -15px 0;
+    top: 237px;
+    left: 204px;
+    width: 16px;
+    height: 14px;
+}
+
+
+
+/*MapPaneDock*/
+.egis .mapPaneDock
+{
+    display: block;
+    border: 0px;
+    position: absolute;
+    top: 350px;
+    right: 15px;
+    width: 100px;
+    height: 380px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.egis .mapPaneDockList
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.egis .mapPaneDockNode
+{
+    background: url('images/panedock/dock_s.png') repeat-x scroll left;
+    border: 1px solid #43a3fe;
+    border-radius: 2px 2px 2px 2px;
+    cursor: pointer;
+    height: 20px;
+    list-style: none outside none;
+    margin-top: 8px;
+    padding-top: 3px;
+    padding-left: 5px;
+    width: 85px;
+}
+
+.egis .mapPaneDockRestoreButton
+{
+    background: url('images/panedock/tag.png') no-repeat center center;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    float: left;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+.egis .mapPaneDockTitleNode
+{
+    overflow: hidden;
+    margin-left: 4px;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+/*NavMenu*/
+/* File Created: 十月 17, 2013 */
+
+.egis .topMenuBar {
+position: fixed;
+right: 10px;
+top: 5px;
+z-index: 20;
+height: 30px;
+width: 80px;
+overflow: visible;
+}
+
+.egis .topMenuBar .image-button .name
+{
+    color: White;
+}
+
+.egis .topMenuBar .nav-menu
+{
+    position: absolute;
+    left: -15px;
+    top: 70px;
+}
+
+.egis .topMenuBar .topMenuBarIcon
+{
+    float: left;
+    margin-left: 14px;
+    margin-top: 0px;
+    width: 48px;
+    height: 70px;
+    cursor: pointer;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+.egis .topMenuBar .topMenuBarText
+{
+    position: relative;
+    left: -4px;
+    top: 40px;
+}
+
+.egis .topMenuBar .nav-menu .dropDownMenuConnector {
+    background-image: url("images/navmenu/tooltip-2.png");
+    width:100px;
+    left:0px;
+    background-position: 5px 0;
+}
+
+.egis .topMenuBar .nav-menu .dijitTooltipFocusNode
+{
+    padding: 0;
+}
+
+
+.egis .topMenuBar .nav-menu .dijitMenuItemSelected,
+.egis .nav-menu .dijitMenuItemHover,
+.egis .nav-menu .dijitMenu     {
+    background-color:transparent;
+    padding-left:10px;
+}
+.egis .topMenuBar .nav-menu .dijitMenuItem {
+    color: #FFFFFF;
+    display: block;
+    padding: 0 10px;
+}
+
+
+/*Popup*/
+/* File Created: 九月 24, 2013 */
+.egis .egisPopup
+{
+    left: 100px;
+    top: 100px;
+    z-index: 1000;
+    border: #2B2B2A 1px solid;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0;
+    overflow: visible;
+}
+
+
+
+.egis .egisPopup .hr
+{
+    background: #2B2B2A;
+    border: 0px;
+    height: 1px;
+    margin: 0;
+}
+
+
+
+.egis .egisPopup .title .icon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.egis .egisPopup .title .text
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.egis .egisPopup .title .detail
+{
+    color: #CEEDFF;
+    cursor: pointer;
+}
+
+.egis .egisPopup .content
+{
+    background-color: #00568c;
+    opacity: 0.9; /*-moz-border-radius: 0 0 3px 3px;     border-radius: 0 0 3px 3px;*/
+    color: #FFFFFF;
+}
+
+
+
+.egis .egisPopup .content .container
+{
+    padding: 8px;
+}
+
+.egis .egisPopup.infoPopup .content .buttonsPane
+{
+    text-align: center;
+    padding-top: 0;
+}
+
+.egis .egisPopup.infoPopup .content .buttonsPane .funcButton
+{
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container
+{
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container table
+{
+    width: 100%;
+    line-height: 1.5em;
+    table-layout: fixed;
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container table td.name
+{
+    width: 5em;
+    word-wrap: break-word;
+}
+
+
+/*WeekRangePicker*/
+/* File Created: 十月 9, 2013 */
+.egis .week-range-picker
+{
+}
+
+.egis .week-range-picker .end-week-box
+{
+    margin-top: 8px;
+}
+
+.egis .week-range-picker .start-week
+{
+    margin-right: 30px;
+    width: 50px;
+}
+
+.egis .week-range-picker .end-week
+{
+    width: 50px;
+}
+
+
+.egis .week-picker .week
+{
+    width: 50px;
+}
+
+.egis .week-picker .month-select
+{
+    margin-left: 0.5em;
+}
+
+.egis .week-picker .label-end
+{
+    margin-left: 0.5em;
+}
+
+.egis .month-picker .month
+{
+    width: 50px;
+}
+
+.egis .month-picker .label-start
+{
+    margin-right: 0.5em;
+}
+
+.egis .month-picker .label-end
+{
+    margin-left: 0.5em;
+}
+
+/*prewarning-pane*/
+.egis .prewarning-pane
+{
+}
+
+.egis .prewarning-pane .target-org-level
+{
+}
+
+.egis .prewarning-statistics
+{
+}
+
+.egis .prewarning-statistics .dijitTabContainer
+{
+    width: 320px;
+    height: 160px;
+}
+
+.egis .case-statistics .dijitTabContainer
+{
+    width: 320px;
+    height: 160px;
+}
+
+.egis .HJFX-Tab .dijitTabContainer
+{
+    width: 380px;
+    height: 300px;
+}
+
+.egis .commonIcons{
+    width: 18px;
+    height: 18px;
+    margin:2px;
+}
+
+
+.egis .basic-floating-pane .dijitContentPane
+{
+    overflow-x: hidden;
+}
+
+.egis .basic-floating-pane .title-pane
+{
+    padding: 0px;
+}
+
+.egis .basic-floating-pane .dijitTabContainerTop-container{
+    border: 0px solid black;
+}
+
+.egis .basic-floating-pane .dijitTab {
+    border: none;
+}
+.egis .basic-floating-pane .dijitTabContainerTop-tabs .dijitTab {
+    background-image:none;
+}
+.egis .basic-floating-pane .dijitButton{
+    float:right;
+}
+
+.egis .floating-datetime-range-picker .label
+{
+    margin-right: 8px;
+}
+
+.egis .floating-datetime-range-picker .textbox
+{
+    width: 250px;
+}
+
+/*手机定位图标*/
+.egis .mobile
+{
+    font-size: 14px;
+    color: #104001;
+    font-weight: bold;
+    width: 180px;
+}
+.egis .mobile .mobile-1
+{
+    background: url('images/alarm/mobile-1.png') no-repeat;
+    width: 28px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-2
+{
+    background: url('images/alarm/mobile-2.png') repeat-x;
+    padding: 5px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-3
+{
+    background: url('images/alarm/mobile-3.png') no-repeat;
+    width: 6px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-pin
+{
+    background: url('images/alarm/mobile-pin.png') no-repeat;
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+}
+
+/*车辆样式*/
+.egis .rotate-info-icon .text {
+    text-align: center;
+    color: White;
+    margin-bottom: 2px;
+    width: 80px;
+}
+
+.egis .rotate-info-icon .text.zhihui {
+    background-color: #C10010;
+}
+
+.egis .rotate-info-icon .text.dagonglv {
+    background-color: #001581;
+}
+
+.egis .rotate-info-icon .text.yunti {
+    background-color: #348100;
+}
+
+.egis .rotate-info-icon .text.qiangxian {
+    background-color: #009793;
+}
+
+.egis .rotate-info-icon .text.changgui {
+    background-color: #970075;
+}
+
+.egis .rotate-info-icon .text.houqin {
+    background-color: #ED4E00;
+}
+
+.egis .rotate-info-icon .text.motuo {
+    background-color: #502501;
+}
+
+.egis .before-text-class
+{
+    margin-right: 8px;
+}
+
+.egis .normal-label-textbox {
+    padding-left: 80px;
+    margin-top: 5px;
+}
+.egis .normal-label-textbox .textbox {
+    width: 50px;
+}
+
+
+.egis .shortcut-text
+{
+}
+
+.egis .shortcut-text .item
+{
+    color: #999999;
+    margin-right: 8px;
+}
+
+.egis .carpane-search
+{
+    width: 280px;
+    margin-left:2px;
+    margin-top:2px;
+}
+
+.egis .orgpicker-search
+{
+    width: 245px;
+}
+
+.egis .casetypepicker-search
+{
+    width: 245px;
+}
+
+.egis .policeforcepicker-search
+{
+    width: 245px;
+}
+
+
+/* egisDialog */
+
+.egis .egisDialog .dijitDialogPaneContent .egisDialogPaneText
+{
+    margin: 40px 100px;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+.egis .egisDialog .dijitDialogPaneContent .egisDialogPaneButtons
+{
+    text-align: right;
+}
+
+.egis .egisDialog .dijitDialogTitleBar .dijitDialogTitle
+{
+    background: url(images/dialog/title.png) no-repeat;
+    padding-left: 40px;
+}
+
+.egis .egisDialog .egisDialogTextIconWarn
+{
+    background: url(images/dialog/warn.png) no-repeat;
+    padding-left: 50px;
+}
+
+.egis .egisDialog .egisDialogTextIconInfo
+{
+    background: url(images/dialog/info.png) no-repeat;
+    padding-left: 50px;
+}
+
+.egis .egisDialog .egisDialogTextIconError
+{
+    background: url(images/dialog/error.png) no-repeat;
+    padding-left: 50px;
+}
+
+/*滚动条样式*/
+.egis .dijitTree::-webkit-scrollbar {
+    height: 8px;
+    width: 8px
+}
+
+.egis .dijitTree::-webkit-scrollbar-button{
+    height: 0;
+    width: 0
+}
+
+.egis .dijitTree::-webkit-scrollbar-button:start:decrement, .egis .dijitTree::-webkit-scrollbar-button:end:increment{
+    display: block
+}
+
+.egis .dijitTree::-webkit-scrollbar-button:vertical:start:increment, .egis .dijitTree::-webkit-scrollbar-button:vertical:end:decrement{
+    display: none
+}
+
+.egis .dijitTree::-webkit-scrollbar-track:vertical {
+    background-clip: padding-box;
+    background: 0
+}
+
+.egis .dijitTree::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-clip: padding-box;
+    min-height: 28px;
+    padding-top: 100
+}
+
+.egis .dijitTree::-webkit-scrollbar-track:vertical{
+    border-width: 0
+}
+
+.egis .dijitTree::-webkit-scrollbar-thumb:hover, .egis .dijitTree::-webkit-scrollbar-thumb:active {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.7) inset;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.egis .dijitTree::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+/*预案推演*/
+.planResource
+{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.planResource.selected
+{
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+}
+
+.planResource .name
+{
+    text-align: center;
+}
+
+/*弹出提示框*/
+.egis .dijitDialogPaneContent {
+    background-image: linear-gradient(rgba(224, 240, 255, 1) 20%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+.planItemPane .dgrid .field-Name 
+{
+    width: 100px;
+}
+
+/*堵控任务列表*/
+.blockTaskGrid 
+{
+    margin-top: 15px;
+}
+
+.blockTaskGrid .dgrid-column-Status
+{
+    width: 60px;
+}
+
+.blockTaskGrid .dgrid-column-StartTime
+{
+    width: 120px;
+}
+
+.blockTaskGrid .dgrid-column-EndTime
+{
+    width: 120px;
+}
+
+.blockTaskGrid .dgrid-column-checked
+{
+    width: 30px;
+}
+
+.halfHourContent
+{
+    height:400px; 
+    overflow-y:scroll;
+}
+
+
+.claro .dijitTitlePaneContentInner {
+  padding: 0px;
+}

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/Scripts/src/Share/component/style.css" type="text/css" />
+    <link rel="stylesheet" href="/Scripts/lib/dojo-release-1.14.1/dijit/themes/dijit.css" />
+    <link rel="stylesheet" href="/Scripts/lib/dojo-release-1.14.1/dijit/themes/claro/claro.css" />
+
+
+    <script>
+        var dojoConfig = {
+            async: true,
+            parseOnLoad: true,
+            isDebug: false,
+            packages: [
+                { name: 'dojo', location: '/Scripts/lib/dojo-release-1.14.1/dojo' },
+                { name: 'dijit', location: '/Scripts/lib/dojo-release-1.14.1/dijit' },
+                { name: 'dojox', location: '/Scripts/lib/dojo-release-1.14.1/dojox' },
+                { name: 'egis', location: '/Scripts/src' }
+            ]
+        };
+
+        function SwitchMenu() {
+            var display = document.getElementById("Menu_Box").style.display;
+            if (display == "none") {
+                ShowMenu();
+            }
+            else {
+                HideMenu();
+            }
+        }
+
+        function ShowMenu() {
+            document.getElementById("Menu_Box").style.display = "block";
+        }
+
+        function HideMenu() {
+            document.getElementById("Menu_Box").style.display = "none";
+        }
+        function SwitchModule(moduleUrl,moduleName,moduleImg,moduleID) {
+            var mainFrame = document.getElementById("mainFrame");
+            if (mainFrame)
+            {
+                // if (window.appEnv && !window.appEnv.appConfig.IsGranted(moduleID, moduleName)) {
+                //     return;
+                // }
+                for (var num = 0; num < mainFrame.children.length; num++)
+                {
+                    mainFrame.children[num].style.display = "none";
+                }
+                var iframe = document.createElement("iframe");
+                iframe.setAttribute("style", "width: 100%; height: 100%;");
+                iframe.setAttribute("src", moduleUrl);
+                mainFrame.appendChild(iframe);
+
+                dojo.publish("egis/Home/AddDesktop", { name: moduleName, imgsrc: moduleImg, workIframe: iframe });
+            }
+        }
+        function OpenModule(moduleUrl, eventType, moduleID) {
+
+            // if (window.appEnv && !window.appEnv.appConfig.IsGranted(moduleID,"")) {
+            //     return;
+            // }
+
+            if (eventType == "DownThing")
+            {
+                window.location.href = moduleUrl;
+            }
+            else if (eventType == "OpenWindow") {
+                window.open(moduleUrl + "&Report/PlayVideo/", "videoWin", 'height=900,width=1200,top=20,left=50,toolbar=no,menubar=no,scrollbars=no,titlebar=no, resizable=no,location=no, status=yes');
+            }
+            else {
+                dojo.publish(moduleUrl, eventType);
+                if (window.appEnv)
+                {
+                    window.appEnv.publishMainPane(moduleUrl, eventType);
+                }
+            }
+        }
+
+        function ShowSonMenu(menuId, top) {
+            document.getElementById(menuId).style.display = "block";
+            document.getElementById(menuId).style.top = top;
+        }
+        function HideSonMenu(menuId) {
+            document.getElementById(menuId).style.display = "none";
+        }
+    </script>
+
+    <script src="/Scripts/lib/dojo-release-1.14.1/dojo/dojo.js" type="text/javascript"></script>
+    <script src="/Scripts/lib/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/Content/base/layout.css" />
+    <link rel="stylesheet" href="/Content/themes/blue/style.css" />
+
+    <script src="/Scripts/src/Modules/Home/startup_page.js" type="text/javascript"></script>
+
+</head>
+<body class="claro egis">
+    <div id="stackContainer" data-dojo-type="dijit/layout/ContentPane" style="border: 0px;padding: 0px; width: 100%; height: 100%; z-index: 5;overflow: hidden;">
+        
+        <div class="top">
+            <img style="margin-top:0px; margin-left:5px;" src="/Content/themes/blue/sysname_ds.png" alt="" />
+        </div>
+        <div id="menuBarContainer" class="topMenuBar" data-dojo-type="dijit/layout/ContentPane">
+
+            <!-- 通信信息显示 -->
+            <div id="u10445" class="ax_default">
+                <!-- Unnamed (图片) -->
+                <div id="u10446" class="ax_default _图片">
+                    <img id="u10446_img" class="img " src="/Content/themes/blue/images/index/u320.png">
+                    <div id="u10447" class="text" style="display: none; visibility: hidden">
+                        <p><span></span></p>
+                    </div>
+                </div>
+
+                <!-- Unnamed (椭圆形) -->
+                <div id="u10448" class="ax_default _TYXZ">
+                    <img id="u10448_img" class="img " src="/Content/themes/blue/images/index/u322.png">
+                    <div id="u10449" class="text" style="visibility: visible; top: -2px; transform-origin: 4px 7px 0px;">
+                        <p><span>9</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 用户照片显示 -->
+            <div id="user-center" class="ui3-user-center-wrap" style="visibility: visible;">
+                <div class="avatar-abstract" onclick="SwitchMenu();" style="background-image: url(&quot;/Content/themes/blue/images/index/face.png&quot;);"></div>
+                <div class="info-box clearfix" id="Menu_Box" onmouseover="ShowMenu();" onmouseout="HideMenu();" style="display: none;">
+                    <div class="arrow"></div>
+                    <div class="detail-info-box">
+                        <div class="up-zone">
+                            <div class="login-wrapper">
+                                <div class="left avatar" style="background-image: url(/Content/themes/blue/images/index/face.png)"></div>
+                                <div class="user-info">
+                                    <div class="username text-overflow">你好！${currentUser.name}</div><br />
+                                    <div class="associate-tip" id="SystemOnlineCount">当前在线：1人</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-split">
+                            <ul class="list">
+                                <li><a href="#" onclick="SwitchModule('/Alarm/Index', '灾害展示', '/Content/themes/blue/images/index/sp-dt2.png','caseDeal');" class="need-login"><i class="JQCZ"></i><span class="color-strong">灾害展示</span></a></li>
+                                <li><a href="#" onclick="SwitchModule('/Duty/Index', '危点管理', '/Content/themes/blue/images/index/sp-dt2.png','netGrid');" class="need-login"><i class="SPXC"></i><span class="color-strong">危点管理</span></a></li>
+                                <li><a href="#" onclick="SwitchModule('/Deduce/Index', '决策支持', '/Content/themes/blue/images/index/sp-dt2.png','Deduce');" class="need-login"><i class="SPXC"></i><span class="color-strong">决策支持</span></a></li>
+                                <li><a href="#" onclick="OpenModule('egis/Stalking/Begin', '模拟发生','oneKey');" class="need-login"><i class="SPXC"></i><span class="color-strong">模拟发生</span></a></li>                            
+                            </ul>
+                        </div>
+                        <div class="bottom-split">
+                            <ul class="list">
+                                <li><a href="javascript:SwitchModule('/Case/Index','灾害分析', '/Content/themes/blue/images/index/sp-tb2.png','chartCase');" class="need-login"><i class="QSFX"></i><span class="color-strong">灾害分析</span></a></li>
+                                <li><a href="javascript:SwitchModule('/Chart/Index','图表统计', '/Content/themes/blue/images/index/sp-tb2.png','chartAnalysis');" class="need-login"><i class="TBFX"></i><span class="color-strong">图表统计</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom-split" onmouseover="ShowSonMenu('Menu_QT','328px');" onmouseout="HideSonMenu('Menu_QT');">
+                            <ul class="list">
+                                <li id="Menu_QTCD"><a href="#" class="need-login"><i class="QTCD"></i><span class="color-strong">其他菜单</span><i class="haveSon"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="exit"><a data-name="quit" href="javascript:window.location.href = '/Home/Logout';" class="logout color-weak">退出账号</a></div>
+                        
+                        <div class="sonMenu-box" id="Menu_QT" onmouseover="ShowSonMenu('Menu_QT');" onmouseout="HideSonMenu('Menu_QT');" style="display: none">
+                            <ul class="list">
+                                <li><a href="javascript:SwitchModule('/User/Index','用户权限', '/Content/themes/blue/images/index/sp-tb2.png','userPermission');"  class="need-login"><i class="icon movie"></i><span class="color-strong">用户权限</span></a></li>
+                                <!-- <li><a href="javascript:SwitchModule('/Base/Index','基础信息', '/Content/themes/blue/images/index/sp-tb2.png','basicInfo');"  class="need-login"><i class="icon movie"></i><span class="color-strong">基础信息</span></a></li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="mainFrame" style="width: 100%; height: 100%; z-index: 5;">
+            
+
+        </div>
+
+    </div>
+</body>
+</html>

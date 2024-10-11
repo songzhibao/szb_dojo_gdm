@@ -1,0 +1,15 @@
+<div class="dojoxFloatingPane" id="${id}">
+	<div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoAttachPoint="focusNode">
+		<span dojoAttachPoint="closeNode" dojoAttachEvent="onclick: close" class="mapFloatingCloseIcon"></span>
+		<span dojoAttachPoint="maxNode" dojoAttachEvent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+		<span dojoAttachPoint="restoreNode" dojoAttachEvent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>	
+		<span dojoAttachPoint="dockNode" dojoAttachEvent="onclick: minimize" class="mapFloatingMinimizeIcon">&thinsp;</span>
+		<span dojoAttachPoint="titleNode" class="mapFloatingTitleText"></span>
+	</div>
+	<div dojoAttachPoint="canvas" class="mapFloatingPaneCanvas">
+		<div dojoAttachPoint="containerNode" role="region" tabindex="-1" class="${contentClass}">
+            __contentTemplateString__
+		</div>
+		<span dojoAttachPoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+	</div>
+</div>

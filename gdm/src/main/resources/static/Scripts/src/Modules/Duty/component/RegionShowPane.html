@@ -1,0 +1,88 @@
+﻿<div class="dojoxFloatingPane">
+    <div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoattachpoint="focusNode">
+        <span dojoattachpoint="closeNode" dojoattachevent="onclick: close" class="mapFloatingCloseIcon"></span>
+        <span dojoattachpoint="maxNode" dojoattachevent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+        <span dojoattachpoint="restoreNode" dojoattachevent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>
+        <span dojoattachpoint="dockNode" dojoattachevent="onclick: minimize" class="mapFloatingMinimizeIcon">&thinsp;</span>
+        <span dojoattachpoint="titleNode" class="mapFloatingTitleText"></span>
+    </div>
+    <div dojoattachpoint="canvas" class="mapFloatingPaneCanvas">
+        <div dojoattachpoint="containerNode" role="region" tabindex="-1" class="${contentClass}">
+            <div style="width: 100%; height: 230px; padding: 0px;" data-dojo-type="dijit/layout/BorderContainer"
+                data-dojo-props="design:'headline', gutters:true, liveSplitters:false">
+                <div style="width: 82%;" data-dojo-type="dijit/layout/ContentPane"
+                    dojoattachpoint="topNode" data-dojo-props="region:'leading'">
+
+
+                    <table cellspacing="5" cellpadding="5">
+                        <tr>
+                            <td style="width: 20px;">
+                                <input data-dojo-attach-point="checkNodeRegionType_1" data-dojo-type="dijit/form/CheckBox" value="1" checked
+                                    data-dojo-attach-event="onClick:_onClick" />
+                            </td>
+                            <td>崩塌
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div data-dojo-attach-point="checkNodeRegionType_3" data-dojo-type="dijit/form/CheckBox" value="3" checked
+                                    data-dojo-attach-event="onClick:_onClick" />
+                            </td>
+                            <td>滑坡
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input data-dojo-attach-point="checkNodeRegionType_5" data-dojo-type="dijit/form/CheckBox" value="5" checked
+                                    data-dojo-attach-event="onClick:_onClick" />
+                            </td>
+                            <td>泥石流
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input data-dojo-attach-point="checkNodeRegionType_10" data-dojo-type="dijit/form/CheckBox" value="10"
+                                    data-dojo-attach-event="onClick:_onClick" />
+                            </td>
+                            <td>水土流失
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input data-dojo-attach-point="checkNodeRegionType_0" data-dojo-type="dijit/form/CheckBox" value="0"
+                                    data-dojo-attach-event="onClick:_onClick" />
+                            </td>
+                            <td>其他类型
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input data-dojo-attach-point="checkNodeMC" data-dojo-type="dijit/form/CheckBox" value="0"
+                                    data-dojo-attach-event="onClick:_onMCClick" />
+                            </td>
+                            <td>显示名称
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                               <button dojotype="dijit/form/DropDownButton">
+                                    <span>单位选择</span>
+                                    <div dojotype="dijit/TooltipDialog">
+                                        <div data-dojo-attach-point="orgNode"></div>
+                                    </div>
+                               </button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <span dojoattachpoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+    </div>
+</div>

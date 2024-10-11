@@ -1,0 +1,66 @@
+﻿<div class="dojoxFloatingPane">
+	<div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoAttachPoint="focusNode">
+		<span dojoAttachPoint="maxNode" dojoAttachEvent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+		<span dojoAttachPoint="restoreNode" dojoAttachEvent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>	
+		<span dojoAttachPoint="titleNode" class="mapFloatingTitleText"></span>
+	</div>
+	<div dojoAttachPoint="canvas" class="mapFloatingPaneCanvas">
+		<div dojoAttachPoint="containerNode" role="region" tabindex="-1" class="${contentClass}">
+            <div style="width:100%; height:475px; padding:0px;" data-dojo-type="dijit/layout/BorderContainer" 
+                data-dojo-props="design:'headline', gutters:true, liveSplitters:false">
+
+                <div data-dojo-type="dijit/layout/ContentPane"
+                                    data-dojo-props="region:'top'" style="padding:0px; height:150px;">
+
+                       <table cellspacing="4" cellpadding="5">
+
+                        <tr>
+                            <td style="width:60px;">
+                               选择辖区:
+                            </td>
+                            <td>
+                                <input data-dojo-attach-point="orgSelected" data-dojo-type="egis/component/JwqTreeTextBox" style="width:210px;"/>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="width:60px;">
+                                是否启用:
+                            </td>
+                            <td>
+                                <select data-dojo-type="dijit/form/Select" data-dojo-attach-point="IsUsed" style="width:210px;">
+                                    <option value="-1" selected="selected">全部</option>
+                                    <option value="1" >启用</option>
+                                    <option value="0" >停用</option>
+                                </select>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="width:60px;">
+                                治保名称:
+                            </td>
+                            <td>
+                                <input data-dojo-attach-point="regionName" data-dojo-type="dijit.form.TextBox" style="width:210px;"/>
+                            </td>
+                        </tr>
+                    </table>
+                        <div style="text-align:right;">
+                            <div data-dojo-attach-point="queryButton" data-dojo-type="dijit/form/Button">
+                                查   询
+                            </div> 
+                            <div data-dojo-attach-point="createButton" data-dojo-type="dijit/form/Button">
+                                新   建
+                            </div> 
+                        </div>
+
+                </div>
+                <div data-dojo-type="dijit/layout/ContentPane" 
+                    data-dojo-props="region:'center'" style="padding:0px;">
+
+                        <div data-dojo-attach-point="gridNode">
+                        </div>
+                </div>
+            </div>
+		</div>
+		<span dojoAttachPoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+	</div>
+</div>

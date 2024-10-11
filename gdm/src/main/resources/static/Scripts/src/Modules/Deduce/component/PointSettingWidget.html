@@ -1,0 +1,38 @@
+﻿<div class='${baseClass} ${class}'>
+    <table cellspacing="10" cellpadding="5" border="0" style="width: 100%; padding: 0px;">
+        <tr>
+            <td>名称:
+            </td>
+            <td>
+                <input dojoattachpoint="ItemName" data-dojo-type="dijit/form/TextBox" style="width: 145px;height: 24px;" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width:60px;">
+                阶段:
+            </td>
+            <td>
+                <select data-dojo-type="dijit/form/Select" dojoattachpoint="ItemStage" style="width:148px;height: 24px;">
+                    <option value="0" >全阶段</option>
+                    <option value="10" >阶段一</option>
+                    <option value="20" >阶段二</option>
+                    <option value="30" >阶段三</option>
+                </select>
+            </td> 
+        </tr>                                       
+        <tr>
+            <td>动作:
+            </td>
+            <td>
+                <input dojoattachpoint="ItemAction" data-dojo-type="dijit/form/TextBox" data-dojo-props="readonly:true" style="width: 75px;height: 24px;" />
+                <div dojoattachpoint="drawActionButton" data-dojo-type="dijit/form/Button" style="padding-right: 10px">绘制轨迹</div>
+            </td>
+        </tr>
+
+    </table>
+    <div style="text-align: center;">
+        <div dojoattachpoint="saveItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">保 存</div>
+        <div dojoattachpoint="cacelItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">取 消</div>
+        <div dojoattachpoint="deleteItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">删 除</div>
+    </div>
+</div>

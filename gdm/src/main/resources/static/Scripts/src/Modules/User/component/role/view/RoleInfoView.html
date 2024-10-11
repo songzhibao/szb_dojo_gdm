@@ -1,0 +1,41 @@
+﻿<div style="margin-left: 25px;">
+    <table cellspacing="15" cellpadding="15">        
+        <tr>
+            <td>
+                <span style="color: Red; font-weight: bolder">*</span><span>角色名称:</span>
+            </td>
+            <td>
+                <input data-dojo-attach-point="roleName_node" data-dojo-type="dijit.form.ValidationTextBox"
+                    data-dojo-props="required:true, missingMessage:'请填写角色名称！'" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                有效性:
+            </td>
+            <td>
+                <select data-dojo-attach-point="valid_node" data-dojo-type="dijit/form/Select">
+                    <option value="1">有效 </option>
+                    <option value="0">无效 </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                备注:
+            </td>
+            <td>
+                <textarea data-dojo-attach-point="memo_node" style="width: 400px; height: 100px"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                角色权限:
+            </td>
+            <td>
+                <div data-dojo-attach-point="privilege_node" data-dojo-type="dijit/layout/ContentPane">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

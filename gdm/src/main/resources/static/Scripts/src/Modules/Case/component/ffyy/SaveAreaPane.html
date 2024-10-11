@@ -1,0 +1,60 @@
+﻿<div style="width:100%; height:100%; padding:0px;">
+    <table cellspacing="5" cellpadding="5">
+        <tr>
+            <td style="width:60px;">
+                关 键  字:
+            </td>
+            <td>
+                <input data-dojo-attach-point="regionName" data-dojo-type="dijit.form.TextBox" style="width:120px;"/>
+            </td>
+             <td rowspan="5">
+                <div data-dojo-attach-point="orgNode"></div>
+             </td>
+        </tr>
+        <tr>
+            <td style="width:60px;">
+                创建用户:
+            </td>
+            <td>
+                <input data-dojo-attach-point="createUser" data-dojo-type="dijit.form.TextBox" data-dojo-props="readonly:true" style="width:120px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:60px;">
+                三区三圈:
+            </td>
+            <td>
+                <select data-dojo-type="dijit/form/Select" data-dojo-attach-point="sqsq" style="width:120px;">
+                    <option value="0" >政区</option>
+                    <option value="1" >景区</option>
+                    <option value="2" >站区</option>
+                    <option value="3" >校圈</option>
+                    <option value="4" >商圈</option>
+                    <option value="5" >医圈</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:60px;">
+                警 务  区:
+            </td>
+            <td>
+               <input data-dojo-attach-point="orgName" data-dojo-type="dijit.form.TextBox" data-dojo-props="readonly:true"  style="width:120px;"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:60px;height:170px">
+                 名称备注:
+            </td>
+            <td >
+                <div>
+                    <textarea data-dojo-attach-point='remarkText' autofocus="true" 
+                        style="width: 120px; height: 170px; resize: none"></textarea>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div style="text-align:center;">
+        <div data-dojo-attach-point="submitButton" data-dojo-type="dijit/form/Button" style="float:right;padding-right:10px">确定</div> 
+    </div>
+</div>

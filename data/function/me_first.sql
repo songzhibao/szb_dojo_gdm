@@ -1,0 +1,40 @@
+--这三个先执行
+CREATE SEQUENCE seq_id
+ INCREMENT 10
+ MINVALUE 90000
+ MAXVALUE 9223372036854775807
+ START 90000
+ CACHE 1;
+
+CREATE SEQUENCE seq_caseid
+ INCREMENT 10
+ MINVALUE 90000
+ MAXVALUE 9223372036854775807
+ START 90000
+ CACHE 1;
+
+CREATE SEQUENCE seq_layerid
+ INCREMENT 10
+ MINVALUE 90000
+ MAXVALUE 9223372036854775807
+ START 90000
+ CACHE 1;
+
+
+
+-- 下面的脚本 在表创建完毕后执行
+
+CREATE OR REPLACE FUNCTION "getonlinetime"()
+  RETURNS "pg_catalog"."timestamp" AS $BODY$
+declare
+  onlinetime TIMESTAMP;
+begin
+  onlinetime = now() + '- 5 min';
+  return onlinetime;
+end;
+
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+
+ALTER FUNCTION "getonlinetime"() OWNER TO "postgres";

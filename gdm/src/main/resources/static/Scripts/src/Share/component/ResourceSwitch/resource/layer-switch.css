@@ -1,0 +1,97 @@
+.dsgisopenlayerscontrolLayerSwitchControl 
+{
+    top: 81px;
+    right: 170px;
+    z-index: 200;
+}
+
+.layer-switch {
+	width: 75px;
+}
+
+.layer-switch .opener {
+	cursor: pointer;
+	/*border: 1px solid #A6A6A6;
+	background-color: #F6F6F6;*/
+    width: 75px;
+    line-height: 17px;
+    background-color: #fff;
+	display: block;
+	float: right;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+}
+
+.layer-switch .opener td{
+	padding: 6px;
+}
+
+.layer-switch .opener .menu-expand {
+	width: 7px;
+	height: 7px;
+	background-image: url("spriteArrows.png");
+	background-position: -21px 0;
+	margin-left: 10px;
+}
+
+.layer-switch .opener .menu-collapse {
+	width: 7px;
+	height: 7px;
+	background-image: url("spriteArrows.png");
+	background-position: 0 0;
+	margin-left: 10px;
+}
+
+.layer-switch .mainMenu {
+	position: relative;
+	float: right;
+	display: block;
+}
+
+
+.layer-switch-popup-menu.dijitMenu {
+    line-height: 17px;
+	/*border: 1px solid #A6A6A6;
+	background-color: #F6F6F6;*/
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+}
+
+.layer-switch-popup-menu .dijitMenuItem {
+}
+
+.layer-switch .dijitSelectMenu .dijitMenuItemHover td,
+.layer-switch .dijitSelectMenu .dijitMenuItemSelected td,
+.layer-switch .dijitMenuItemHover,
+.layer-switch .dijitMenuItemSelected,
+.layer-switch-popup-menu .dijitSelectMenu .dijitMenuItemHover td,
+.layer-switch-popup-menu .dijitSelectMenu .dijitMenuItemSelected td,
+.layer-switch-popup-menu .dijitMenuItemHover,
+.layer-switch-popup-menu .dijitMenuItemSelected {
+	background-color: transparent;
+}
+
+.layer-switch .dijitCheckedMenuItemIcon,
+.layer-switch-popup-menu .dijitCheckedMenuItemIcon {
+	background-position: -15px 50%;
+	background-image: url('checkboxRadioButtonStates.png');
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 16px;
+}
+
+.layer-switch td.dijitMenuItemIconCell,
+.layer-switch-popup-menu td.dijitMenuItemIconCell {
+	padding: 6px;
+}
+
+.layer-switch .dijitMenuExpand,
+.layer-switch-popup-menu .dijitMenuExpand {
+	width: 7px;
+	height: 7px;
+	background-image: url("menu-expand.png");
+	background-position: 0;
+	margin-right: 5px;
+	margin-left: 10px;
+}

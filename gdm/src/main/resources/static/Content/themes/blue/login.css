@@ -1,0 +1,156 @@
+﻿
+*
+{font-size:100%;font-family:Tahoma,Simsun,Helvetica,sans-serif;letter-spacing:.03em;}
+body
+{font-size:9pt;color:#333;background-color:#FFF;margin:0;}
+form
+{margin:0;}
+a
+{text-decoration:none;color:#08D;}
+a:hover
+{text-decoration:underline;color:#08D;}
+img
+{border:0;}
+h1
+{font-size:133%;font-weight:normal;margin:19px 0 5px 0;}
+p
+{margin:5px 0 4px 0;}
+ul
+{padding:0;margin:0 0 8px 18px;}
+li
+{margin:0 0 5px 0;}
+.cssLogo
+{padding:0 0 0 11px;margin:0 0 19px 0;}
+.cssFooterPadding
+{padding:4px 8px 4px 8px;}
+.cssFooterRightA
+{color:#666;padding:0 8px 0 8px;border-right:1px solid #666;}
+.cssLastFooterRightA
+{color:#666;padding-left:8px;padding-right:0px;}
+.cssFooterLeft a
+{color:#666;padding-left:14px;}
+td#footerTD
+{width:100%;font-size:97%;border-top:1px solid #CDDDF4;}
+.cssFooterLeft
+{text-align:left;}
+.cssFooterRight
+{text-align:right;}
+td#leftTD,td#topleftTD,td#btmleftTD
+{border-right:1px solid #DDD;text-align:right;padding:0 36px 0 36px;}
+td#leftTD
+{width:185px;}
+.upsellTD
+{width:245px;border-right:1px solid #DDD;text-align:left;padding:0 36px 0 36px;}
+td#topleftTD,td#btmleftTD
+{width:245px;}
+td#rightTD, td#moreTD, td#toprightTD
+{padding:0 36px 0 36px;width:310px;}  
+td#moreTD
+{text-indent:4px;}
+div#idOtherAcctTtl
+{width:100%;padding-top:20px;}
+div#idOtherAcctLinkMore
+{border-bottom:1px solid #DDD;margin-bottom:10px;}
+.cssCBImg
+{width:130px;padding-left:36px;}
+.cssAppHeader
+{font-size:110%;color:#25A;}
+.cssAppBigBold
+{font-size:133%;color:#333;font-weight:bold;}
+.cssContainerTextBold
+{letter-spacing:.03em;font-weight:bold;;}
+.cssContainerTextSmallCenter
+{letter-spacing:.03em;font-size:97%;vertical-align:middle;}
+.cssContainerTextSmallest
+{letter-spacing:.03em;font-size:97%;}
+.cssError
+{color:#D22;padding:0 2px 6px 2px;width:350px;}
+.cssWarning
+{padding:0 2px 0 2px;width:350px;}
+#pwd .cssImageTD,#pwd .cssLTButtonTD,.cssErrorImg
+{vertical-align:top;}
+.cssHelpText
+{color:#666;padding:1px 0 2px 0;}
+.cssHelpText p
+{margin:0;}
+.cssUsername
+{margin:2px 0;}
+.cssBtn
+{font-size:97%;letter-spacing:.03em;border:0;}
+.cssBtnBorder
+{padding:1px 1px 1px 1px;}
+.cssBtnRest
+{background-color:#f1f1f1;border:1px solid #666;}
+.cssBtnRest input
+{color:#00156e;background:url(../images/btnbkgnd_rest.gif) repeat-x center left;}
+.cssBtnDefault
+{background-color:#f1f1f1;border:1px solid #4a95c9;}
+.cssBtnHot
+{background-color:#f1f1f1;border:1px solid #2059a5;}
+.cssBtnDefault input,table.cssBtn,.cssBtnHot input
+{color:#00156e;background:#cfe8f5 repeat-x center left;}
+.cssTextInputTD
+{padding:2px 0px 2px 0px;}
+.cssCheckbox
+{text-indent:-4px;margin-left:0;}
+.cssHIPImage
+{border:solid 1px #333;}
+.cssHIPButton
+{padding:0 5px 0 5px;width:100%;}
+.cssLTButtonTD
+{padding:3px 4px 2px 4px;text-index:0;}
+.cssImageTD
+{padding:4px 8px 2px 0;}
+div.cssASpacer
+{margin:4px 0;}
+td.cssASpacer
+{padding:8px 0 4px 0;}
+.cssLabel
+{padding:3px 3px 16px 0;width:0;vertical-align:top;text-align:right;}
+.cssTextBoxTD
+{width:100%;padding:0 0 15px 0;}
+.cssIndent
+{text-indent:4px;}
+.cssUpgFlavor
+{padding-left:60px;}
+.cssSigning
+{color:#08D;letter-spacing:.03em;font-size:97%;margin:0;}
+.cssUsernameTD,.cssTextInput,.cssTextInputTD,.cssHIPTable
+{width:100%;}
+.cssUserBtn
+{width:100%;background:none;border:0;margin-left:-4px;}
+.cssUT
+{background:none;border:1px solid white;width:100%;}
+.cssUTMore
+{background:none;border:1px solid white;width:100%;padding-left:3px;}
+.cssLT
+{background:#cfe8f5 url(../images/utbkgnd.gif) repeat-x center left;border:1px solid #b7d8ed;width:100%;}
+.cssLTMore
+{background:#cfe8f5 url(../images/utbkgnd.gif) repeat-x center left;border:1px solid #b7d8ed;width:100%;padding-left:3px;}
+.cssLT #ut
+{filter:progid:DXImageTransform.Microsoft.DropShadow(color='#88B4C6',offX=2,offY=2);}
+.cssUT #ut
+{filter:progid:DXImageTransform.Microsoft.DropShadow(color='#DDDDDD',offX=2,offY=2);}
+.cssDisable
+{filter:alpha(opacity=25);}
+.cssWLIDLogo16
+{margin-right:2px;vertical-align:middle;}
+.cssWLGradientTop
+{top:0;height:51px;filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#0f3c7c',EndColorStr='#7eb6c0',GradientType=0);}
+.cssWLGradientBottom
+{top:51;height:21px;filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#82bbc0',EndColorStr='#f7fdfb',GradientType=0);}
+.cssWLGradientCommon
+{margin:0;padding:0;width:100%;}
+.cssWLGradientIMG
+{BACKGROUND-IMAGE: url(../images/livecom_h_default_ngls_str.jpg);BACKGROUND-REPEAT:repeat-x;top:0;height:72px;}
+.cssPMargin
+{margin:12px 0;}
+.cssNorthSysName
+{font-family:宋体;font-weight: bold;font-size:35px;color:#025249;}
+.cssSourthSysName
+{font-family:宋体;font-weight: bold;font-size:35px;color:#1d124c;}
+
+
+#defaultBody{
+	background-color: #a7d0e6;
+}

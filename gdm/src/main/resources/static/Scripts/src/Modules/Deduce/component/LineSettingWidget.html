@@ -1,0 +1,61 @@
+﻿<div class='${baseClass} ${class}'>
+    <table cellspacing="10" cellpadding="5" border="0" style="width: 100%; padding: 0px;">
+        <tr>
+            <td>名称:
+            </td>
+            <td>
+                <input dojoattachpoint="ItemName" data-dojo-type="dijit/form/TextBox" style="width: 145px;height: 24px;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                阶段:
+            </td>
+            <td>
+                <select data-dojo-type="dijit/form/Select" dojoattachpoint="ItemStage" style="width:148px;">
+                    <option value="0" >全阶段</option>
+                    <option value="10" >阶段一</option>
+                    <option value="20" >阶段二</option>
+                    <option value="30" >阶段三</option>
+                </select>
+            </td> 
+        </tr>
+        <tr>
+            <td colspan="4">
+
+            <table cellspacing="0" cellpadding="0" border="0" style="width: 100%; padding: 0px;">
+
+            <tr>
+                <td>
+                    线宽:
+                </td>
+                <td>
+                    <input dojoType="dijit/form/NumberSpinner" value="1" smallDelta="0.1" style="width: 50px;height: 24px;"    
+                     constraints="{min:0.1,max:10,places:1}" dojoattachpoint="ItemSpinner" /> 
+                </td> 
+                <td>
+                    线色:
+                </td>
+                <td>
+                    <input dojoattachpoint="ItemFillColor" data-dojo-type="dijit/form/TextBox" data-dojo-props="readonly:true" style="width: 50px;height: 24px;" />
+                    <button dojotype="dijit/form/DropDownButton">
+                        <span style="background-color: Red"></span>
+                        <div dojotype="dijit/TooltipDialog">
+                            <div dojotype="dijit/ColorPalette" dojoattachpoint="regionColorPicker"></div>
+                        </div>
+                    </button>
+                </td>
+            </tr>
+
+
+            </table>
+
+            </td>
+        </tr>  
+    </table>
+    <div style="text-align: center;">
+        <div dojoattachpoint="saveItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">保 存</div>
+        <div dojoattachpoint="cacelItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">取 消</div>
+        <div dojoattachpoint="deleteItemButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">删 除</div>
+    </div>
+</div>

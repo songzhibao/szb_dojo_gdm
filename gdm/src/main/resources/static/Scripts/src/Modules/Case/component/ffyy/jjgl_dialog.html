@@ -1,0 +1,54 @@
+﻿<div class="dojoxFloatingPane">
+	<div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoAttachPoint="focusNode">
+		<span dojoAttachPoint="closeNode" dojoAttachEvent="onclick: close" class="mapFloatingCloseIcon"></span>
+		<span dojoAttachPoint="maxNode" dojoAttachEvent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+		<span dojoAttachPoint="restoreNode" dojoAttachEvent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>	
+		
+		<span dojoAttachPoint="titleNode" class="mapFloatingTitleText"></span>
+	</div>
+
+	<div dojoAttachPoint="canvas" class="mapFloatingPaneCanvas">
+
+
+ 
+                        <div style="width:99.5%; height:100%; padding:0px;" data-dojo-type="dijit/layout/BorderContainer" 
+                                        data-dojo-props="design:'headline', gutters:false, liveSplitters:false">
+
+                                <div data-dojo-type="dijit/layout/ContentPane"
+                                    data-dojo-props="region:'top'" style="padding:0px; height:60px;">
+
+                                                <div style="margin-top:8px;">
+                                                    <span style="margin-left:15px;">
+                                                        案件地址：<input type="text" data-dojo-attach-point="textBox1" readonly="readonly" style="width:240px;" data-dojo-type="dijit/form/TextBox"/>
+                                                    </span>
+                                                </div>
+                                                <div style="margin-top:8px;">
+                                                    <span style="margin-left:15px;">
+                                                        &nbsp关  键   字：<input type="text" data-dojo-attach-point="textBox2" readonly="readonly" style="width:240px;" data-dojo-type="dijit/form/TextBox"/>
+                                                    </span>
+                                                </div>
+
+                                </div>
+                                <div data-dojo-type="dijit/layout/ContentPane" 
+                                    data-dojo-props="region:'center'" style="padding:0px;">
+
+                                        <div data-dojo-attach-point="gridNode">
+                                        </div>
+                                </div>
+
+                                <div data-dojo-type="dijit/layout/ContentPane" 
+                                    data-dojo-props="region:'bottom'" style="padding:10px 10px 0 10px; height:30px;">
+                                    
+                                    <button data-dojo-attach-point="queryButton" type="button" style="float:right;margin-left:15px;">确 定</button>
+                                    <button data-dojo-attach-point="createButton" type="button" style="float:right; margin-left:15px; display:none;">新 建</button>
+                                    
+                                </div>
+                        </div>
+
+
+
+
+		<span dojoAttachPoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+
+	</div>
+</div>

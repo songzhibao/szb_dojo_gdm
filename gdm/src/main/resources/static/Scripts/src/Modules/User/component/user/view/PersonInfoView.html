@@ -1,0 +1,82 @@
+﻿<div style="margin-left: 25px;">
+    <table cellspacing="15" cellpadding="15">
+
+
+        <tr>
+            <td rowspan="8">
+                <div data-dojo-attach-point="photo_node" style="width: 140px; height: 170px;">
+                </div>
+                <input multiple="false" type="file" label="选择照片..." style="margin-left: 35px; margin-top: 22px"
+                    data-dojo-props="url:'/User/UploadPhoto', uploadOnSelect:true" data-dojo-attach-point="uploadPhoto_node"
+                    data-dojo-type="dojox/form/Uploader" />
+            </td>
+            <td>
+                姓名
+            </td>
+            <td>
+                <input data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="nickname_node" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                单位:
+            </td>
+            <td colspan="2">
+                <input data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="org_node" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                手机:
+            </td>
+            <td colspan="3">
+                <input data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="mobile_node" />
+            </td>
+        </tr>
+        <tr>
+    		<td><span style="color: Red; font-weight: bolder">*</span><span>登陆名:</span></td>
+            <td colspan="2">
+                <input data-dojo-attach-point="name_node" 
+                       data-dojo-type="dijit.form.ValidationTextBox" 
+                       data-dojo-props="pattern:'[\\w]+', required:true, missingMessage:'登录名不能为空！', invalidMessage:'登陆名不能包含中文或空白字符！'" />
+            </td>
+    	</tr>
+
+        <tr>
+    		<td><span style="color: Red; font-weight: bolder">*</span><span>密码:</span></td>
+            <td colspan="2">
+                <input data-dojo-attach-point="password_node" type="password"
+                       data-dojo-type="dijit.form.ValidationTextBox" 
+                       data-dojo-props="required:true, missingMessage:'请填写登陆密码！'" />
+            </td>
+    	</tr>
+
+        <tr>
+    		<td>重复输入密码:</td>
+            <td colspan="2">
+                <input data-dojo-attach-point="repassword_node" type="password"
+                       data-dojo-type="dijit.form.ValidationTextBox" 
+                       data-dojo-props="required:true, missingMessage:'请填写登陆密码！'" />
+            </td>
+    	</tr>
+        <tr>
+            <td>
+                有效性:
+            </td>
+            <td colspan="2">
+                <select data-dojo-attach-point="valid_node" data-dojo-type="dijit.form.Select">
+                    <option value="1">有效</option>
+                    <option value="0">无效</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                备注:
+            </td>
+            <td colspan="2">
+                <textarea data-dojo-attach-point="memo_node" style="width: 400px; height: 100px"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>

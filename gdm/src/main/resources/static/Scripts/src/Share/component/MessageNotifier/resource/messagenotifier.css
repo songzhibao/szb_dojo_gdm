@@ -1,0 +1,34 @@
+.notifier {
+    width: 333px;
+	height: 100px;
+    background: url(firenotebg.png) 0 0;
+    border: 1px solid #102574;
+    font: 16px;
+    text-align: left;
+    top: 0;
+    position: absolute;
+    z-index: 100000
+}
+
+.notifier ul {
+    padding: 13px 10px 0 13px;
+}
+
+.notifier ul li {
+    list-style-type: none;
+    padding: 0 0 0 25px;
+    margin: 0 0 10px 0;
+    line-height: 16px;
+}
+
+.notifier ul li.error {
+    background: url(error.png) no-repeat 0 0;
+}
+
+.notifier ul li.warn {
+    background: url(warn.png) no-repeat 0 0;
+}
+
+.notifier ul li.info {
+    background: url(info.png) no-repeat 0 0;
+}

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/Scripts/src/Share/component/style.css" type="text/css" />
+    <style>
+
+    /*页面加载进度条start*/
+    #loading-mask{
+        background-color:white;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        z-index:20000;
+    }
+    #loading{
+        height:auto;
+        position:absolute;
+        left:45%;
+        top:40%;
+        padding:2px;
+        z-index:20001;
+    }
+    #loading a {
+        color:#225588;
+    }
+    #loading .loading-indicator{
+        background:white;
+        color: darkgray;
+        font:bold 13px Helvetica, Arial, sans-serif;
+        height:auto;
+        margin:0;
+        padding:10px;
+        text-align:center;
+    }
+    #loading-msg {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="loading-mask" style="">
+    </div>
+    <div id="loading">
+        <div class="loading-indicator">
+            <img src="/Content/themes/blue/images/extanim32.gif" width="32" height="32" style="margin-right: 8px;
+                float: left; vertical-align: top;" alt="" /><br /><br /><br />
+            正在加载...</div>
+    </div>
+
+</body>
+</html>

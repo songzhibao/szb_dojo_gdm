@@ -1,0 +1,2479 @@
+﻿/*main*/
+
+.egis .policeSumGrid
+{
+    height: 540px;
+}
+
+.dijitTitlePaneContentOuter {
+background: #ffffff;
+border: 1px solid #b5bcc7;
+border-top: none;
+height: calc(100% - 26px);
+}
+
+
+.expand #mapType {
+    height: 106px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.8);
+}
+
+#mapType {
+    height: 106px;
+    -webkit-transition-property: width,background-color;
+    transition-property: width,background-color;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    width: 130px;
+    background-color: rgba(255,255,255,0);
+}
+
+#mapType .mapTypeCard {
+    position: absolute;
+    top: 0px;
+    -webkit-transition-property: right,background-image;
+    transition-property: right,background-image;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    right:0px;
+}
+
+.mapTypeCard:hover span {
+    background-color: #3385FF;
+}
+
+
+#mapType .mapTypeCard span {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: inline-block;
+    padding: 3px 3px 2px 4px;
+    font-size: 16px;
+    color: #FFF;
+    border-top-left-radius: 2px;
+}
+
+#mapType .mapTypeCard:hover .switch-box {
+    visibility: visible;
+}
+
+#mapType .switch-box {
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    color: #fff;
+}
+
+
+.alarm-wrap .alarm-wrap-item a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding-right: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.alarm-wrap .alarm-wrap-item i.default {
+    background: url(images/suggestion-icon_013979b.png) no-repeat 12px -12px;
+}
+
+
+.alarm-wrap .alarm-wrap-item i {
+    padding-left: 39px;
+    font-style: normal;
+    color: #666;
+    position: relative;
+    z-index: 1;
+    padding-top: 1px;
+}
+
+.mapBoardPane {
+    padding: 0px;
+    /* width: 280px; */
+    height: 300px;
+    background-color: #fff;
+    z-index: 100;
+    visibility: visible;
+    border-radius: 4px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+
+.mapBoardPane .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0px 8px 8px;
+    border-color: transparent transparent transparent #fff;
+    top: 10px;
+    right: -8px;
+    position: absolute;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+
+
+.mapFixedPane {
+
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    padding: 0px;
+    width: 280px;
+    /*height: 360px;*/
+    height: 325px;
+    background-color: #fff;
+    z-index: 100;
+    visibility: visible;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+/*-----------------MapFixedPane css created by song 2017-03-24-------*/
+
+#tool-container {
+    float: right;
+    margin-right: 6px;
+    z-index: 100;
+}
+
+
+
+.ui3-control-wrap {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    width : 100%;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+}
+
+
+.ui3-control-wrap #ui3_city_change {
+    display: inline-block;
+    float: left;
+    border-radius: 2px;
+}
+
+.ui3-control-wrap #weather {
+    display: inline-block;
+    line-height: 17px;
+    height: 34px;
+    background-color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    float: left;
+}
+
+.ui3-control-wrap .ui3-city-change-inner {
+    display: inline-block;
+    padding-right: 12px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.ui3-control-wrap .ui3-city-change-inner em {
+    width: 7px;
+    height: 7px;
+    margin-left: 5px;
+    float: left;
+    margin-top: 13px;
+    background-image: url(images/newtools_9ddbaad.png);
+    background-repeat: no-repeat;
+    background-position: -13px -17px;
+}
+
+
+.ui3-control-wrap .ui3-city-change-inner em.active {
+    background-position: -12px -177px;
+}
+
+.ui3-control-wrap .left b, .ui3-control-wrap .right b {
+    float: left;
+    height: 21px;
+    display: inline-block;
+    border-right: 1px solid #eee;
+    top: 7px;
+    position: relative;
+}
+
+
+.ui3-control-wrap .trafficopt {
+    padding-right: 12px;
+    line-height: 34px;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ui3-control-wrap .left span, .ui3-control-wrap .right span {
+    float: left;
+    height: 34px;
+    width: 29px;
+    background-image: url(images/newtools_9ddbaad.png);
+    background-repeat: no-repeat;
+}
+
+.ui3-control-wrap .last {
+    border: 0!important;
+}
+
+
+.ui3-control-wrap .traffic {
+    background-position: 1px -114px;
+}
+
+.ui3-control-wrap i {
+    float: left;
+    font-size: 12px;
+    font-style: normal;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+}
+
+.ui3-control-wrap .left b, .ui3-control-wrap .right b {
+    float: left;
+    height: 21px;
+    display: inline-block;
+    border-right: 1px solid #eee;
+    top: 7px;
+    position: relative;
+}
+
+.ui3-control-wrap .boxopt {
+    padding-right: 12px;
+    line-height: 34px;
+    float: left;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ui3-control-wrap .left span, .ui3-control-wrap .right span {
+    float: left;
+    height: 34px;
+    width: 29px;
+    background-image: url(images/newtools_9ddbaad.png);
+    background-repeat: no-repeat;
+}
+
+.ui3-control-wrap .boxutils {
+    padding-right: 7px;
+    background-position: -34px -116px;
+}
+
+
+
+.ui3-control-wrap .ui3-city-change-inner span {
+    font-size: 12px;
+    float: left;
+}
+
+
+
+.ui3-control-wrap .boxopt em {
+    width: 7px;
+    height: 7px;
+    float: left;
+    margin-top: 13px;
+    margin-left: 5px;
+    background-image: url(images/newtools_9ddbaad.png);
+    background-repeat: no-repeat;
+    background-position: -13px -17px;
+}
+
+.ui3-control-wrap .boxopt em.active {
+    background-position: -12px -177px;
+}
+
+.ui3-control-wrap .left, .ui3-control-wrap .right {
+    height: 34px;
+    background: #fff;
+    border-radius: 0 2px 2px 0;
+}
+
+
+.float-l {
+    float: left;
+}
+
+.ui3-control-wrap .detail-box {
+    position: absolute;
+    width: 86px;
+    background: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+    top: 34px;
+    right: 0;
+    float: left;
+    display: none;
+    z-index: 80000;
+}
+
+.ui3-control-wrap .police-box {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+    top: 40px;
+    right: 0;
+    float: left;
+    display: none;
+    z-index: 80000;
+}
+
+
+.ui3-control-wrap .boxinfo li {
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 7px;
+}
+
+.ui3-control-wrap .boxinfo li .measure {
+    background-position: -80px -117px;
+}
+
+.ui3-control-wrap .boxinfo li .mark {
+    background-position: -80px -168px;
+}
+
+.ui3-control-wrap .boxinfo li .share {
+    background-position: -163px -117px;
+}
+
+.ui3-control-wrap .left span, .ui3-control-wrap .right span {
+    float: left;
+    height: 34px;
+    width: 29px;
+    background-image: url(images/newtools_9ddbaad.png);
+    background-repeat: no-repeat;
+}
+
+.ui3-control-wrap .last {
+    border: 0!important;
+}
+
+.ui3-control-wrap .boxinfo li i {
+    margin-left: 2px;
+}
+
+.ui3-control-wrap i {
+    float: left;
+    font-size: 12px;
+    font-style: normal;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+}
+
+/*-----------------SearchBoxPane css created by song 2017-01-4-------*/
+.SearchBoxPane {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.searchbox {
+    border-radius: 2px;
+    width: 425px;
+    position: relative;
+    z-index: 5;
+}
+
+.searchbox .searchbox-container {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+    width: 368px;
+    float: left;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+.searchbox-container_default {
+	box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    padding: 0px; 
+
+}
+
+.sole-searchbox-content {
+    position: relative;
+}
+.searchbox-content {
+    width: 368px;
+    border-radius: 2px 0 0 2px;
+    background: #fff;
+}
+
+.sole-input {
+    box-sizing: border-box;
+    border: 0;
+    padding: 9px 0;
+    border-left: 10px solid transparent;
+    border-right: 27px solid transparent;
+    line-height: 20px;
+    font-size: 16px;
+    height: 38px;
+    width: 280px;
+    color: #333;
+    position: relative;
+    border-radius: 2px 0 0 2px;
+}
+
+.input-clear {
+    cursor: pointer;
+    /*position: relative;*/
+    width: 18px;
+    height: 38px;
+    background: url(images/searchbox_f175577.png) no-repeat -10px -38px #fff;
+    border: 0;
+    padding: 0;
+}
+
+
+.search-button {
+    pointer-events: auto;
+    /*background: url(images/searchbox_f175577.png) no-repeat 0 -76px #3385ff;*/
+    background: url(images/s-16.png) no-repeat  11px 12px  #3385ff;
+    width: 38px;
+    height: 38px;
+    float: right;
+    position: relative;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+.other-button {
+    width: 38px;
+    height: 38px;
+    float: right;
+    position: relative;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+.otherbutton-box {
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+    padding: 0px;
+}
+
+.rectSelect {
+    background: url(images/f-16.png) no-repeat  10px 11px  blue;
+}
+
+.circleSelect {
+    background: url(images/r-16.png) no-repeat  10px 11px  blue;
+}
+
+.polygonSelect {
+    background: url(images/d-16.png) no-repeat  10px 11px  blue;
+}
+
+.lineSelect {
+    background: url(images/l-16.png) no-repeat  10px 11px  blue;
+}
+
+.rect {
+    background: url(images/f-16.png) no-repeat  10px 11px  #3385ff;
+}
+
+.circle {
+    background: url(images/r-16.png) no-repeat  10px 11px  #3385ff;
+}
+
+.polygon {
+    background: url(images/d-16.png) no-repeat  10px 11px  #3385ff;
+}
+
+.line {
+    background: url(images/l-16.png) no-repeat  10px 11px  #3385ff;
+}
+
+#toast-wrapper {
+    pointer-events: auto;
+    visibility: hidden;
+    position: absolute;
+    width: 368px;
+    height: 35px;
+    left: 0;
+    bottom: -35px;
+    z-index: 1;
+    -webkit-transition: visibility .5s;
+    transition: visibility .5s;
+    overflow: hidden;
+}
+
+.list-basecard
+{
+    pointer-events: auto;
+    position:absolute;
+    left:30px;
+    top: 130px;
+    width: 288px;
+    height: 461px;
+    max-height: 461px;
+    /*margin-top: 10px;*/
+    box-sizing: border-box;
+    /*padding: 10px;*/
+    background: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    border-radius: 2px;
+    -webkit-transition: max-height .5s;
+    transition: max-height .5s;
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.15); 
+}
+
+
+
+
+/*-------------------------------------------------------------------*/
+
+
+
+/*-----------------mapPaneDock css created by song 2017-01-4-------*/
+/*mapPaneDock*/
+.egis .mapPaneDock
+{
+    display: block;
+    border: 0px;
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.egis .mapPaneDockList
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.egis .PaneDockNode
+{
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    /*border-radius: 2px 2px 2px 2px;*/
+    cursor: pointer;
+    height: 20px;
+    list-style: none outside none;
+    margin-top: 5px;
+    padding : 5px;
+    width: 270px;
+}
+
+.egis .PaneDockCloseButton
+{
+    background: url('images/floatingpane/tabClose.png') no-repeat center center;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0x;
+}
+
+.egis .PaneDockTitleNode
+{
+    overflow: hidden;
+    margin-left: 4px;
+    font-size: 13px;
+    color: grey;
+}
+
+.egis .PaneDockCheckNode
+{
+    overflow: hidden;
+    margin-left: 4px;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+.egis
+{
+    font-size: 12px;
+}
+
+.egis .pd10
+{
+    padding: 10px;
+}
+
+.egis div.olMapViewport
+{
+}
+
+.egis .image-button
+{
+    text-align: center;
+}
+
+.egis div
+{
+    outline: none;
+}
+
+
+.egis .egisopenlayersBaseLayerSwitchControl
+{
+    top: 120px;
+    right: 25px;
+}
+
+.egis .olControlScale
+{
+    right: 25px;
+    bottom: 50px;
+}
+
+.egis .top
+{
+    position: absolute;
+    width: 100%;
+    background: url(images/topbg.png) repeat-x 0 0;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+}
+
+.egis .footer
+{
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    background: url(images/footbg.png) repeat-x 0 0;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.egis .caseTypeTree
+{
+    height: 300px;
+}
+
+.egis .policeForceTree
+{
+    height: 300px;
+}
+
+.egis #stackController
+{
+    display: block;
+    padding: 7px;
+    float: left;
+}
+
+.egis #stackController .dijitToggleButton
+{
+    margin-right: 10px;
+}
+
+.egis #bottomToolbar
+{
+    float: right;
+}
+
+.egis .bottomMenuBar
+{
+    position: fixed;
+    right: 13px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.egis .bottomMenuBarIcon
+{
+    float: right;
+    margin-left: 8px;
+    margin-top: 9px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.egis .dojoxGridScrollbox
+{
+    overflow-x: hidden;
+}
+
+.egis .add-map
+{
+    background: url(images/add-map.png);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.egis .add-map:hover
+{
+    background: url(images/add-map.png) -24px 0;
+}
+
+.egis .claro .dijitTabContainerTop-tabs .dijitTab
+{
+    min-width: 40px;
+}
+
+/*AnalysisPane*/
+/* File Created: 九月 29, 2013 */
+
+.egis .analysis-floating-pane
+{
+    width: 320px;
+}
+
+.egis .analysis-floating-pane hr
+{
+    margin: 12px 0;
+    background: #C8C8C8;
+    height: 1px;
+    border: 0;
+}
+
+.egis .analysis-floating-pane .query-item .name
+{
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.egis .analysis-floating-pane .query-item .shortcut-text
+{
+    margin-top: 5px;
+    margin-left: 3em;
+}
+
+/*-----------------created by chenjunjie 2014-07-14-------*/
+.egis .analysis-floating-pane .query-item2 .name
+{
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.egis .analysis-floating-pane .query-item2 .shortcut-text
+{
+    margin-top: 5px;
+    margin-left: 0em;
+}
+/*---------------------------------------------------------*/
+
+.egis .analysis-floating-pane .dijitTextBox
+{
+    width: 250px;
+}
+
+.egis .analysis-floating-pane .analysis-icon-bg
+{
+    background: url(images/analysis-icon-bg.png);
+    width: 28px;
+    height: 28px;
+}
+
+.egis .analysis-floating-pane .analysis-icon
+{
+    float: left;
+    margin-right: 8px;
+}
+
+.egis .analysis-floating-pane .shortcut-container
+{
+    float: left;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.egis .analysis-floating-pane .bottom-area-box
+{
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    margin-top: 8px;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .bl-area
+{
+    float: left;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .br-area
+{
+    float: right;
+}
+
+.egis .analysis-floating-pane .bottom-area-box .dijitButton
+{
+    float: right;
+    margin-left: 7px;
+}
+
+.egis .case-condition-pane
+{
+}
+
+.egis .case-condition-pane .time-pane
+{
+    height: 100px;
+    padding: 8px;
+}
+
+.egis .case-condition-pane .period-picker
+{
+    margin-top: 8px;
+}
+
+.egis .case-condition-pane .time-pane .dijitTabPaneWrapper, .egis .hotmap-condition-pane .time-pane .dijitTabPaneWrapper
+{
+    padding: 8px;
+}
+
+/*CaseResultPane*/
+.egis .caesResultPaneTitle
+{
+    background: #286aab;
+    height: 25px;
+    border: 0px solid #BFBFBF;
+    white-space: nowrap;
+}
+
+
+
+/*CloseButton*/
+
+.egis .closeButton
+{
+    background: url(images/closebutton/closebutton.png);
+    width: 96px;
+    height: 40px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.egis .closeButtonSelected
+{
+    background: url(images/closebutton/closebutton_selected.png);
+    position: relative;
+    top: -40px;
+    width: 96px;
+    height: 46px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.egis .closeButtonCloseImg
+{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+    visibility: visible;
+    background: url(images/closebutton/tabclose.png);
+    width: 16px;
+    height: 16px;
+}
+
+
+/*DropDownMenu*/
+.egis .dropDownMenuPosition
+{
+    position: absolute;
+    width: 84px;
+    z-index: 100;
+}
+
+.egis .dropDownMenuConnector
+{
+    position: absolute;
+    border: 0;
+    z-index: 10;
+    background-image: url("images/mapoverview/tooltip.png");
+    background-repeat: no-repeat;
+    background-position: -31px 0;
+    top: -13px;
+    left: 31px;
+    width: 16px;
+    height: 14px;
+}
+
+/*MapContextMenu*/
+
+.egis .prevViewIcon
+{
+    background: url(images/contextmenu/prev-view.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .nextViewIcon
+{
+    background: url(images/contextmenu/next-view.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .lineMeasureIcon
+{
+    background: url(images/contextmenu/measure-line.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .areaMeasureIcon
+{
+    background: url(images/contextmenu/measure-area.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .fullExtentIcon
+{
+    background: url(images/contextmenu/full-extent.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .extentQueryIcon
+{
+    background: url(images/contextmenu/extent_query.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .panIcon
+{
+    background: url(images/contextmenu/pan.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .zoomInIcon
+{
+    background: url(images/contextmenu/zoom_in.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .zoomOutIcon
+{
+    background: url(images/contextmenu/zoom_out.gif);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .cleanMapIcon
+{
+    background: url(images/contextmenu/clear.png);
+    width: 16px;
+    height: 16px;
+}
+
+.egis .stalkingIcon
+{
+    background: url(images/contextmenu/stalking.png);
+    width: 16px;
+    height: 16px;
+}
+
+/*MapFloatingPane*/
+
+.egis .mapFloatingPane
+{
+    position: absolute;
+    z-index: 100;
+    background: url('images/floatingpane/winbg.png') repeat-x 0 0;
+    border: 1px solid #43a3fe;
+    padding: 4px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneCanvas
+{
+    padding: 8px;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneTitle
+{
+    background: none;
+    height: 30px;
+    border: 0px solid #BFBFBF;
+    padding: 4px 4px 2px;
+    white-space: nowrap;
+    cursor: move;
+}
+
+.egis .mapFloatingPane .mapFloatingCloseIcon
+{
+    background: url('images/floatingpane/win_c.png') no-repeat scroll center center transparent;
+    float: right;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.egis .mapFloatingPane .mapFloatingMinimizeIcon
+{
+    background: url('images/floatingpane/win_s.png') no-repeat scroll 0 center transparent;
+    float: right;
+    margin: 0 4px;
+    overflow: hidden;
+    width: 12px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 7px;
+}
+
+.egis .mapFloatingPane .mapFloatingMaximizeIcon
+{
+    background: url('images/floatingpane/spriteArrows.png') no-repeat -21px center;
+    width: 7px;
+    margin: 0px 4px;
+    overflow: hidden;
+    float: right;
+    display: none;
+}
+
+.egis .mapFloatingPane .mapFloatingRestoreIcon
+{
+    background: url('images/floatingpane/spriteArrows.png') no-repeat 0px center;
+    width: 7px;
+    margin: 0px 4px;
+    float: right;
+    display: none;
+}
+
+.egis .mapFloatingPane .mapFloatingPaneCanvas
+{
+    background: url('images/pane-bg-2.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.7) 100%);
+    border-radius: 2px;
+}
+
+
+.egis .mapFloatingPane .mapFloatingCaseAddressOnIcon
+{
+    background: url('images/case/address-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 70px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseAddressOffIcon
+{
+    background: url('images/case/address-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 70px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTypeOnIcon
+{
+    background: url('images/case/casetype-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTypeOffIcon
+{
+    background: url('images/case/casetype-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTimeOnIcon
+{
+    background: url('images/case/time-on.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+.egis .mapFloatingPane .mapFloatingCaseTimeOffIcon
+{
+    background: url('images/case/time-off.png');
+    width: 28px;
+    height: 28px;
+    margin-top: -4px;
+    margin-right: 12px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.egis .mapFloatingPane .mapFloatingTitleText
+{
+    border: 0px;
+    padding: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #125f92;
+    white-space: nowrap;
+    display: inline-block;
+    float: left;
+}
+
+.egis .mapFloatingPane.dojoxFloatingPaneFg
+{
+    background: url('images/floatingpane/winbg-float.png') repeat-x 0 0;
+}
+
+.egis .mapFloatingPane.dojoxFloatingPaneFg .mapFloatingTitleText
+{
+    color: #fff;
+}
+
+.egis .mapFloatingPane .dojoxFloatingPaneContent
+{
+    background: none;
+}
+
+.egis .mapFloatingPane input.dijitArrowButtonInner
+{
+    height: 24px !important;
+}
+.egis .mapFloatingPane .dijitInputInner
+{
+    height: 24px;
+}
+
+/*MapOverview*/
+.egis .mapOverviewPosition
+{
+    position: absolute;
+    z-index: 9999;
+}
+
+.egis .mapOverviewPosition .olControlOverviewMapElement
+{
+    padding: 0;
+    background: White;
+}
+
+.egis .mapOverviewPosition .olMap
+{
+    width: 220px;
+    height: 220px;
+}
+
+.egis .mapOverviewConnector
+{
+    position: absolute;
+    border: 0;
+    z-index: 10;
+    background-image: url("images/mapoverview/tooltip.png");
+    background-repeat: no-repeat;
+    background-position: -15px 0;
+    top: 237px;
+    left: 204px;
+    width: 16px;
+    height: 14px;
+}
+
+.egis .messageGridTipPosition
+{
+    position: absolute;
+    z-index: 9999;
+    width: 390px;
+    height: 240px;
+}
+
+.egis .messageGridTipConnector
+{
+    position: absolute;
+    border: 0;
+    z-index: 10;
+    background-image: url("images/mapoverview/tooltip.png");
+    background-repeat: no-repeat;
+    background-position: -15px 0;
+    top: 243px;
+    left: 352px;
+    width: 16px;
+    height: 14px;
+}
+
+
+/*首页右上角样式*/
+/* File Created: 十月 17, 2013 */
+
+#u10445 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+.ax_default {
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+
+
+#u10446 {
+    position:  absolute;
+    left: 2px;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+}
+
+
+#u10446_img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+
+#u10447 {
+    position: absolute;
+    left: 2px;
+    top: 4px;
+    width: 20px;
+    visibility: hidden;
+    word-wrap: break-word;
+}
+
+
+#u10448 {
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+    color: #FFFFFF;
+}
+._TYXZ {
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+#u10449 {
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    width: 8px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#user-center.ui3-user-center-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    visibility: hidden;
+    position: relative;
+    top: -7px;
+    float: right;
+}
+
+
+.avatar-abstract {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: opacity .4s linear;
+    transition: opacity .4s linear;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box {
+    position: absolute;
+    display: none;
+    top: 35px;
+    right: 0;
+    width: 300px;
+}
+.clearfix {
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix {
+}
+
+
+
+#user-center.ui3-user-center-wrap .info-box .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 8px;
+    border-color: transparent transparent #3385ff;
+    top: 17px;
+    right: 17px;
+    position: absolute;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .detail-info-box {
+    border-radius: 2px;
+    background-color: #fff;
+    width: 220px;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .detail-info-box .up-zone {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background: #3385ff;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .detail-info-box .up-zone .login-wrapper {
+    padding: 14px 12px;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .detail-info-box .up-zone .avatar {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#user-center.ui3-user-center-wrap .info-box .left {
+    float: left;
+    display: inline;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .detail-info-box .up-zone .user-info {
+    position: relative;
+    width: 214px;
+    text-align: left;
+}
+
+
+#user-center.ui3-user-center-wrap .bottom-split {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#user-center.ui3-user-center-wrap .sonMenu-box {
+    border-radius: 2px;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 220px;
+    width: 160px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .list {
+    padding: 0 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+form, p, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, tr, th, td, input {
+    margin: 0;
+    padding: 0;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li:hover {
+    background-color: #e0e0e0;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li {
+    background-color: #fff;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .icon.home {
+    background-position: 0 0;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/usercenter-icons_c1d50cc.png);
+    background: -webkit-image-set(url(images/usercenter-icons_c1d50cc.png) 1x,url(images/usercenter-icons-2x_2f9c648.png) 2x);
+    background: -moz-image-set(url(images/usercenter-icons_c1d50cc.png) 1x,url(images/usercenter-icons-2x_2f9c648.png) 2x);
+    background: -o-image-set(url(images/usercenter-icons_c1d50cc.png) 1x,url(images/usercenter-icons-2x_2f9c648.png) 2x);
+    background: -ms-image-set(url(images/usercenter-icons_c1d50cc.png) 1x,url(images/usercenter-icons-2x_2f9c648.png) 2x);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .list>li .haveSon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(images/index/b-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 180px;
+    top: 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .QWGL {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/qw-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .JQCZ {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/jqcz-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .list>li .TBFX {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/tbfx-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .QTCD {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/QTCD-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .SPXC {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/jqcx-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li .QSFX {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(images/index/jqcx-16.png) no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+#user-center.ui3-user-center-wrap .info-box .list .mylocation-box {
+    height: 20px;
+    position: relative;
+    width: 248px;
+    top: 12px;
+    left: 28px;
+}
+
+
+
+
+#user-center.ui3-user-center-wrap .info-box .list>li {
+    height: 40px;
+    line-height: 42px;
+    border-bottom: 1px dashed #eee;
+    position: relative;
+    text-indent: 28px;
+}
+
+form, p, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, tr, th, td, input {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#user-center.ui3-user-center-wrap .info-box .exit {
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+#user-center.ui3-user-center-wrap .info-box .list>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#user-center.ui3-user-center-wrap a {
+    text-decoration: none;
+}
+a {
+    color: #333;
+    text-decoration: underline;
+    outline: 0;
+    cursor: pointer;
+}
+a, input, select {
+    font-size: 12px;
+}
+
+
+
+
+/*Popup*/
+/* File Created: 九月 24, 2013 */
+.egis .egisPopup
+{
+    left: 100px;
+    top: 100px;
+    z-index: 1000;
+    border: #2B2B2A 1px solid;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0;
+    overflow: visible;
+}
+
+.egis .egisPopup .closeBtn
+{
+    cursor: pointer;
+    background: url('images/popup-close.png') no-repeat;
+    width: 10px;
+    height: 10px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.egis .egisPopup .hr
+{
+    background: #2B2B2A;
+    border: 0px;
+    height: 1px;
+    margin: 0;
+}
+
+.egis .egisPopup .title
+{
+    color: #FFFFFF;
+    background-image: linear-gradient(rgba(0, 49, 123, 1) 0%, rgba(0, 52, 126, 1) 100%);
+    padding: 8px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.egis .egisPopup .title .icon
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.egis .egisPopup .title .text
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.egis .egisPopup .title .detail
+{
+    color: #CEEDFF;
+    cursor: pointer;
+}
+
+.egis .egisPopup .content
+{
+    background-image: linear-gradient(rgba(0, 52, 126, 1) 0%, rgba(0, 124, 196, 1) 100%);
+    background-color: #00568c;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+.egis .egisPopup .tail
+{
+    position: absolute;
+    background: url(images/popup-tail.png);
+    width: 17px;
+    height: 19px;
+}
+
+.egis .egisPopup .content .container
+{
+    padding: 8px;
+}
+
+.egis .egisPopup.infoPopup .content .buttonsPane
+{
+    text-align: center;
+    padding-top: 0;
+}
+
+.egis .egisPopup.infoPopup .content .buttonsPane .funcButton
+{
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container
+{
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container table
+{
+    width: 100%;
+    line-height: 1.5em;
+    table-layout: fixed;
+}
+
+.egis .egisPopup.infoPopup.tableInfoPopup .container table td.name
+{
+    width: 6em;
+    word-wrap: break-word;
+}
+
+
+/*WeekRangePicker*/
+/* File Created: 十月 9, 2013 */
+.egis .week-range-picker
+{
+}
+
+.egis .week-range-picker .end-week-box
+{
+    margin-top: 8px;
+}
+
+.egis .week-range-picker .start-week
+{
+    margin-right: 30px;
+    width: 50px;
+}
+
+.egis .week-range-picker .end-week
+{
+    width: 50px;
+}
+
+
+.egis .week-picker .week
+{
+    width: 50px;
+}
+
+.egis .week-picker .month-select
+{
+    margin-left: 0.5em;
+}
+
+.egis .week-picker .label-end
+{
+    margin-left: 0.5em;
+}
+
+.egis .month-picker .month
+{
+    width: 50px;
+}
+
+.egis .month-picker .label-start
+{
+    margin-right: 0.5em;
+}
+
+.egis .month-picker .label-end
+{
+    margin-left: 0.5em;
+}
+
+/*prewarning-pane*/
+.egis .prewarning-pane
+{
+}
+
+.egis .prewarning-pane .target-org-level
+{
+}
+
+.egis .prewarning-statistics
+{
+}
+
+.egis .prewarning-statistics .dijitTabContainer
+{
+    width: 430px;
+    height: 300px;
+}
+
+.egis .case-statistics .dijitTabContainer
+{
+    width: 430px;
+    height: 300px;
+}
+
+
+/* Dijit widget common icons*/
+
+/*commonIcons.css is located in dijit/icons
+
+commonIconsRtl.css is TBD. This needs to be reviewed to determine in Rtl is reqd. 
+
+The 16 x 16px icons in these sprites are action and object type images which can be used in the following widgets: accordionContainer, menu, tab, titlepane, tree, and all button widgets and error validation contexts. */
+
+.egis.commonUserIcons.dijitIconSave,
+.egis.commonUserIcons.dijitIconPrint,
+.egis.commonUserIcons.dijitIconCut,
+.egis.commonUserIcons.dijitIconCopy,
+.egis.commonUserIcons.dijitIconClear,
+.egis.commonUserIcons.dijitIconDelete,
+.egis.commonUserIcons.dijitIconUndo,
+.egis.commonUserIcons.dijitIconEdit,
+.egis.commonUserIcons.dijitIconNewTask,
+.egis.commonUserIcons.dijitIconEditTask,
+.egis.commonUserIcons.dijitIconEditProperty,
+.egis.commonUserIcons.dijitIconTask,
+.egis.commonUserIcons.dijitIconFilter,
+.egis.commonUserIcons.dijitIconConfigure,
+.egis.commonUserIcons.dijitIconSearch,
+.egis.commonUserIcons.dijitIconApplication,
+.egis.commonUserIcons.dijitIconBookmark,
+.egis.commonUserIcons.dijitIconChart,
+.egis.commonUserIcons.dijitIconConnector,
+.egis.commonUserIcons.dijitIconDatabase,
+.egis.commonUserIcons.dijitIconDocuments,
+.egis.commonUserIcons.dijitIconMail,
+.egis.commonUserIcons.dijitLeaf,
+.egis.commonUserIcons.dijitIconFile,
+.egis.commonUserIcons.dijitIconFunction,
+.egis.commonUserIcons.dijitIconKey,
+.egis.commonUserIcons.dijitIconPackage,
+.egis.commonUserIcons.dijitIconSample,
+.egis.commonUserIcons.dijitIconTable,
+.egis.commonUserIcons.dijitIconUsers,
+.egis.commonUserIcons.dijitFolderClosed,
+.egis.commonUserIcons.dijitIconFolderClosed,
+.egis.commonUserIcons.dijitFolderOpened,
+.egis.commonUserIcons.dijitIconFolderOpen,
+.egis.commonUserIcons.dijitIconError {
+	background-image: url('images/commonIconsObjActEnabled.png'); /* Contains both object and action icons in a sprite image for the enabled state.  */
+	width: 16px;
+	height: 16px;
+}
+
+.egis.commonUserIcons.dijitDisabled .dijitIconSave,
+.egis.commonUserIcons.dijitDisabled .dijitIconPrint,
+.egis.commonUserIcons.dijitDisabled .dijitIconCut,
+.egis.commonUserIcons.dijitDisabled .dijitIconCopy,
+.egis.commonUserIcons.dijitDisabled .dijitIconClear,
+.egis.commonUserIcons.dijitDisabled .dijitIconDelete,
+.egis.commonUserIcons.dijitDisabled .dijitIconUndo,
+.egis.commonUserIcons.dijitDisabled .dijitIconEdit,
+.egis.commonUserIcons.dijitDisabled .dijitIconNewTask,
+.egis.commonUserIcons.dijitDisabled .dijitIconEditTask,
+.egis.commonUserIcons.dijitDisabled .dijitIconEditProperty,
+.egis.commonUserIcons.dijitDisabled .dijitIconTask,
+.egis.commonUserIcons.dijitDisabled .dijitIconFilter,
+.egis.commonUserIcons.dijitDisabled .dijitIconConfigure,
+.egis.commonUserIcons.dijitDisabled .dijitIconSearch,
+.egis.commonUserIcons.dijitDisabled .dijitIconApplication,
+.egis.commonUserIcons.dijitDisabled .dijitIconBookmark,
+.egis.commonUserIcons.dijitDisabled .dijitIconChart,
+.egis.commonUserIcons.dijitDisabled .dijitIconConnector,
+.egis.commonUserIcons.dijitDisabled .dijitIconDatabase,
+.egis.commonUserIcons.dijitDisabled .dijitIconDocuments,
+.egis.commonUserIcons.dijitDisabled .dijitIconMail,
+.egis.commonUserIcons.dijitDisabled .dijitLeaf,
+.egis.commonUserIcons.dijitDisabled .dijitIconFile,
+.egis.commonUserIcons.dijitDisabled .dijitIconFunction,
+.egis.commonUserIcons.dijitDisabled .dijitIconKey,
+.egis.commonUserIcons.dijitDisabled .dijitIconPackage,
+.egis.commonUserIcons.dijitDisabled .dijitIconSample,
+.egis.commonUserIcons.dijitDisabled .dijitIconTable,
+.egis.commonUserIcons.dijitDisabled .dijitIconUsers,
+.egis.commonUserIcons.dijitDisabled .dijitFolderClosed,
+.egis.commonUserIcons.dijitDisabled .dijitIconFolderClosed,
+.egis.commonUserIcons.dijitDisabled .dijitFolderOpened,
+.egis.commonUserIcons.dijitDisabled .dijitIconFolderOpen,
+.egis.commonUserIcons.dijitDisabled .dijitIconError { background-image: url('images/commonIconsObjActDisabled.png');}
+/* Contains both object and action icons as a sprite image for the disabled state. These would be used by buttons and menus.   */
+
+/*Action icons*/
+.egis.commonUserIcons.dijitIconSave { background-position: 0; }
+.egis.commonUserIcons.dijitIconPrint { background-position: -16px; }
+.egis.commonUserIcons.dijitIconCut { background-position: -32px; }
+.egis.commonUserIcons.dijitIconCopy { background-position: -48px; }
+.egis.commonUserIcons.dijitIconClear { background-position: -64px; }
+.egis.commonUserIcons.dijitIconDelete { background-position: -80px; }
+.egis.commonUserIcons.dijitIconUndo { background-position: -96px; }
+.egis.commonUserIcons.dijitIconEdit { background-position: -112px; }
+.egis.commonUserIcons.dijitIconNewTask { background-position: -128px; }
+.egis.commonUserIcons.dijitIconEditTask { background-position: -144px; }
+.egis.commonUserIcons.dijitIconEditProperty { background-position: -160px; }
+.egis.commonUserIcons.dijitIconTask { background-position: -176px; }
+.egis.commonUserIcons.dijitIconFilter { background-position: -192px; }
+.egis.commonUserIcons.dijitIconConfigure { background-position: -208px; }
+.egis.commonUserIcons.dijitIconSearch { background-position: -224px; }
+.egis.commonUserIcons.dijitIconError { background-position: -496px; } 
+
+/*Object icons*/
+.egis.commonUserIcons.dijitIconApplication { background-position: -240px; }
+.egis.commonUserIcons.dijitIconBookmark { background-position: -256px; }
+.egis.commonUserIcons.dijitIconChart { background-position: -272px; }
+.egis.commonUserIcons.dijitIconConnector { background-position: -288px; }
+.egis.commonUserIcons.dijitIconDatabase { background-position: -304px; }
+.egis.commonUserIcons.dijitIconDocuments { background-position: -320px; }
+.egis.commonUserIcons.dijitIconMail { background-position: -336px; }
+.egis.commonUserIcons.dijitIconFile, .dijitLeaf { background-position: -352px; }
+.egis.commonUserIcons.dijitIconFunction { background-position: -368px; }
+.egis.commonUserIcons.dijitIconKey { background-position: -384px; }
+.egis.commonUserIcons.dijitIconPackage{ background-position: -400px; }
+.egis.commonUserIcons.dijitIconSample { background-position: -416px; }
+.egis.commonUserIcons.dijitIconTable { background-position: -432px; }
+.egis.commonUserIcons.dijitIconUsers { background-position: -448px; }
+
+
+/*Tree folder icons*/
+.dijitIconFolderClosed, .dijitFolderClosed { background-position: -464px; }
+.dijitIconFolderOpen, .dijitFolderOpened { background-position: -480px; }
+
+/*Loading animation*/
+.dijitIconLoading {
+	background:url('images/loadingAnimation_rtl.gif') no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.egis .commonIcons
+{
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    background-image: url("images/toolbaricon.png");
+}
+
+.egis .commonIcons.showCaseIcon
+{
+    background-position: 0px 0px;
+}
+
+.egis .commonIcons.caseQuery
+{
+    background-position: -72px 0px;
+}
+
+
+.egis .commonIcons.prewarningIcon
+{
+    background-position: -18px 0px;
+}
+
+.egis .commonIcons.chartAnalysisIcon
+{
+    background-position: -36px 0px;
+}
+
+.egis .commonIcons.hotmapIcon
+{
+    background-position: -54px 0px;
+}
+
+.egis .commonIcons.fourcolorWarningAssessment
+{
+    background-position: 0px -18px;
+}
+.egis .commonIcons.serviceLevelAssessment
+{
+    background-position: -18px -18px;
+}
+.egis .commonIcons.patrolGuardAssessment
+{
+    background-position: -36px -18px;
+}
+.egis .commonIcons.rankingPoliceIntelligenceAssessment
+{
+    background-position: -54px -18px;
+}
+
+.egis .commonIcons.ruleBreakQuery
+{
+    background-position: -72px -18px;
+}
+
+.egis .commonIcons.policeDutyStatistics
+{
+    background-position: -90px -18px;
+}
+
+.egis .commonIcons.dutyLevelSetting
+{
+    background-position: -108px -18px;
+}
+
+.egis .commonIcons.policeSurveillance
+{
+    background-position: 0px -36px;
+}
+.egis .commonIcons.policeInquiry
+{
+    background-position: -18px -36px;
+}
+.egis .commonIcons.analogAlarmPositioning
+{
+    background-position: -36px -36px;
+}
+
+.egis .commonIcons.bayonetInquiry
+{
+    background-position: 0px -54px;
+}
+.egis .commonIcons.carTrack
+{
+    background-position: -18px -54px;
+}
+.egis .commonIcons.dispatchedTask
+{
+    background-position: -36px -54px;
+}
+
+.egis .commonIcons.blockingHandles
+{
+    background-position: 0px -72px;
+}
+.egis .commonIcons.blockTask
+{
+    background-position: -36px -72px;
+}
+
+.egis .commonIcons.deductionPlan
+{
+    background-position: -18px -72px;
+}
+
+.egis .commonIcons.theme
+{
+    background-position: -0px -90px;
+}
+.egis .commonIcons.userPermission
+{
+    background-position: -36px -90px;
+}
+
+.egis .commonIcons.basicInfo
+{
+    background-position: -54px -90px;
+}
+
+.egis .commonIcons.quit
+{
+    background-position: -18px -90px;
+}
+
+.egis .basic-floating-pane
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 20%, rgba(215, 235, 254, 0.9) 100%);
+    border: 1px solid #b5bcc7;
+    background-color: White;
+}
+
+.egis .basic-floating-pane .dijitContentPane
+{
+    overflow-x: hidden;
+}
+
+.egis .basic-floating-pane .title-pane
+{
+    padding: 0px;
+}
+
+.egis .basic-floating-pane .title-pane .close-node
+{
+    background: url(images/tabClose.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    float: right;
+    cursor: pointer;
+}
+.egis .basic-floating-pane .dijitTabContainerTop-container
+{
+    border: 0px solid black;
+}
+.egis .basic-floating-pane .dijitTabContainerTop-tabs .dijitTabChecked
+{
+    color: #fff;
+    background-color: #027bff;
+    background-image: none;
+}
+.egis .basic-floating-pane .dijitTab
+{
+    border: none;
+}
+.egis .basic-floating-pane .dijitTabContainerTop-tabs .dijitTab
+{
+    background-image: none;
+}
+.egis .basic-floating-pane .dijitButton
+{
+    float: right;
+}
+
+.egis .floating-datetime-range-picker .label
+{
+    margin-right: 8px;
+}
+
+.egis .floating-datetime-range-picker .textbox
+{
+    width: 250px;
+}
+
+/*手机定位图标*/
+.egis .mobile
+{
+    font-size: 14px;
+    color: #104001;
+    font-weight: bold;
+    width: 180px;
+}
+.egis .mobile .mobile-1
+{
+    background: url('images/alarm/mobile-1.png') no-repeat;
+    width: 28px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-2
+{
+    background: url('images/alarm/mobile-2.png') repeat-x;
+    padding: 5px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-3
+{
+    background: url('images/alarm/mobile-3.png') no-repeat;
+    width: 6px;
+    height: 52px;
+    float: left;
+}
+.egis .mobile .mobile-pin
+{
+    background: url('images/alarm/mobile-pin.png') no-repeat;
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+}
+
+/*车辆样式*/
+.egis .rotate-info-icon .text
+{
+    text-align: center;
+    color: White;
+    margin-bottom: 2px;
+    width: 80px;
+    background: black;
+}
+
+.egis .rotate-info-icon .text.zhihui
+{
+    background-color: #C10010;
+}
+
+.egis .rotate-info-icon .text.dagonglv
+{
+    background-color: #001581;
+}
+
+.egis .rotate-info-icon .text.yunti
+{
+    background-color: #348100;
+}
+
+.egis .rotate-info-icon .text.qiangxian
+{
+    background-color: #009793;
+}
+
+.egis .rotate-info-icon .text.changgui
+{
+    background-color: #970075;
+}
+
+.egis .rotate-info-icon .text.houqin
+{
+    background-color: #ED4E00;
+}
+
+.egis .rotate-info-icon .text.motuo
+{
+    background-color: #502501;
+}
+
+.egis .before-text-class
+{
+    margin-right: 8px;
+}
+
+.egis .normal-label-textbox
+{
+    padding-left: 80px;
+    margin-top: 5px;
+}
+.egis .normal-label-textbox .textbox
+{
+    width: 50px;
+}
+
+
+.egis .shortcut-text
+{
+}
+
+.egis .shortcut-text .item
+{
+    color: #999999;
+    margin-right: 8px;
+}
+
+.egis .carpane-search
+{
+    width: 280px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.egis .orgpicker-search
+{
+    width: 245px;
+}
+
+.egis .casetypepicker-search
+{
+    width: 245px;
+}
+
+.egis .policeforcepicker-search
+{
+    width: 245px;
+}
+
+.egis .policeforcepicker-search
+{
+    width: 245px;
+}
+
+/* egisDialog */
+
+.egis .egisDialog .dijitDialogPaneContent .egisDialogPaneText
+{
+    margin: 40px 100px;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+.egis .egisDialog .dijitDialogPaneContent .egisDialogPaneButtons
+{
+    text-align: right;
+}
+
+.egis .egisDialog .dijitDialogTitleBar .dijitDialogTitle
+{
+    background: url(images/dialog/title.png) no-repeat;
+    padding-left: 40px;
+}
+
+.egis .egisDialog .egisDialogTextIconWarn
+{
+    background: url(images/dialog/warn.png) no-repeat;
+    padding-left: 50px;
+}
+
+.egis .egisDialog .egisDialogTextIconInfo
+{
+    background: url(images/dialog/info.png) no-repeat;
+    padding-left: 50px;
+}
+
+.egis .egisDialog .egisDialogTextIconError
+{
+    background: url(images/dialog/error.png) no-repeat;
+    padding-left: 50px;
+}
+
+/* egis live pane */
+.egis .policeDutyLivePane
+{
+    cursor: pointer;
+    width: 200px;
+    line-height: 33px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:1px 1px 1px #333;
+    border-radius: 5px;
+    margin:0 20px 20px 0;
+    position: relative;
+    overflow: hidden;
+    border:1px solid #1e7db9;
+    box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
+    background: -webkit-linear-gradient(top,#42a4e0,#2e88c0);
+    background: -moz-linear-gradient(top,#42a4e0,#2e88c0);
+    background: linear-gradient(top,#42a4e0,#2e88c0);
+    background: url('images/menubg.png') repeat-x ;
+    
+    filter:alpha(opacity=80);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.8;  
+}
+
+/* egis police duty grid */
+.egis .policeDutyGrid
+{
+    height: 315px;
+}
+
+.egis .policeDutyGrid .field-name 
+{
+    width: 120px;
+}
+
+/* 勤务等级颜色设置，应用于日历*/
+.claro .dojoxCalendarEvent.Calendar4 .bg 
+{
+  background-color: #00AA00;
+}
+.claro .dojoxCalendarEvent.Calendar4.Hovered .bg 
+{
+  background-color: #00FF00;
+}
+.claro .dojoxCalendarEvent.Calendar4.Selected .bg 
+{
+  background-color: #00AA00;
+}
+
+.claro .dojoxCalendarEvent.Calendar2 .bg 
+{
+  background-color: #ff0000;
+}
+.claro .dojoxCalendarEvent.Calendar2.Hovered .bg 
+{
+  background-color: #ef6756;
+}
+.claro .dojoxCalendarEvent.Calendar2.Selected .bg 
+{
+  background-color: #ff0000;
+}
+
+.claro .dojoxCalendarEvent.Calendar3 .bg 
+{
+  background-color: #ffaa25;
+}
+.claro .dojoxCalendarEvent.Calendar3.Hovered .bg 
+{
+  background-color: #ffe83e;
+}
+.claro .dojoxCalendarEvent.Calendar3.Selected .bg 
+{
+  background-color: #ffaa25;
+}
+
+.claro .dojoxCalendarEvent.Calendar1 .bg 
+{
+  background-color: #0021d8;
+}
+.claro .dojoxCalendarEvent.Calendar1.Hovered .bg 
+{
+  background-color: #8696ee;
+}
+.claro .dojoxCalendarEvent.Calendar1.Selected .bg 
+{
+  background-color: #0021d8;
+}
+
+.casedetail-baseinfo table
+{
+    border-collapse: collapse;
+    border: none;
+}
+.casedetail-baseinfo table td
+{
+    border: 1px solid #c4dff8;
+    height: 25px;
+}
+
+.DojoTree_Icon_Node_Police 
+{
+    background: url("/Content/themes/blue/images/Region/OnePolice16.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.DojoTree_Icon_Node_PointOnePolice 
+{
+    background: url("/Content/themes/blue/images/Region/OnePolice16.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.DojoTree_Icon_Node_PointMutiPolice
+{
+    background: url("/Content/themes/blue/images/Region/MutiPolice16.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}  /*padding-left属性必须设置，否则不显示图标*/
+
+ .DojoTree_Icon_Node_PointSafePoint
+{
+    background: url("/Content/themes/blue/images/Region/SafePoint16.png") no-repeat;
+    /*padding-left:16px;*/ 
+	width: 16px;
+	height: 16px;
+}
+
+.DojoTree_Icon_Node_Project
+{
+    background: url("/Content/themes/blue/images/Region/Node_Project.gif") no-repeat;
+    /*padding-left:16px;*/ 
+    width: 16px;
+	height: 16px;
+} 
+
+.DojoTree_Icon_Node_Stage
+{
+    background: url("/Content/themes/blue/images/Region/Node_Stage.gif") no-repeat;
+	width: 16px;
+	height: 16px;
+}  
+
+.DojoTree_Icon_Node_Line
+{
+    background: url("/Content/themes/blue/images/Region/polyline.gif") no-repeat;
+    /*padding-left:16px;*/ 
+    width: 16px;
+	height: 16px;
+}  
+
+.DojoTree_Icon_Node_Polygon
+{
+    background: url("/Content/themes/blue/images/Region/polygon.gif") no-repeat;
+    /*padding-left:16px;*/ 
+	width: 16px;
+	height: 16px;
+}  

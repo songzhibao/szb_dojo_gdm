@@ -1,0 +1,68 @@
+@startuml 危点管理
+class SystemServiceImpl implements SystemService {
+    +saveUserInfo()
+    +getUserList()
+    +deleteUserInfo()
+    +getPrivilegeList()
+    +getRoleList()
+    +getOneRoleInfo()
+    +saveRoleInfo()
+    +deleteRoleInfo()
+    +getOrgInfo()
+    +getOrgTreeInfo()
+    +getOrgList()
+    +saveOrgInfo()
+    +getOrgInfoById()
+}
+class SystemController  {
+    +saveUserInfo()
+    +getUserList()
+    +deleteUserInfo()
+    +getPrivilegeList()
+    +getRoleList()
+    +getOneRoleInfo()
+    +saveRoleInfo()
+    +deleteRoleInfo()
+    +getOrgInfo()
+    +getOrgTreeInfo()
+    +getOrgList()
+    +saveOrgInfo()
+    +getOrgInfoById()
+}
+class OrgInfoEntity{
+    String id
+    Integer typeId
+    String code
+    String name
+    String parent
+    String tel
+    Integer OrderNumber
+}
+class UserInfoEntity{
+    String id
+    String code
+    String password
+    String name
+    String phone
+    String photo
+}
+class RoleInfoEntity{
+    String id
+    String code
+    String name
+    String memo
+}
+class PrivilegeInfoEntity{
+    String id
+    String code
+    String password
+    String name
+    String phone
+    String photo
+}
+SystemController --> SystemService
+OrgInfoEntity "1" *-- "many" UserInfoEntity : orgInfo
+UserInfoEntity "1" *-- "many" RoleInfoEntity : roleList
+RoleInfoEntity "1" *-- "many" PrivilegeInfoEntity : privilegeList
+UserInfoEntity "1" *-- "many" PrivilegeInfoEntity : privilegeList
+@enduml

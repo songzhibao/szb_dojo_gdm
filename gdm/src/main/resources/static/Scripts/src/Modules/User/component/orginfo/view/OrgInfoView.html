@@ -1,0 +1,77 @@
+﻿<div style="margin-left: 25px;">
+    <table cellspacing="15" cellpadding="15">
+        <tr>
+            <td>
+                <span style="color: Red; font-weight: bolder">*</span><span>代码:</span>
+            </td>
+            <td>
+                <input data-dojo-attach-point="orgCode_node" data-dojo-type="dijit.form.ValidationTextBox"
+                    data-dojo-props="required:true, missingMessage:'代码不能为空！'" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="color: Red; font-weight: bolder">*</span><span>名称:</span>
+            </td>
+            <td>
+                <input data-dojo-attach-point="orgName_node" data-dojo-type="dijit.form.ValidationTextBox"
+                    data-dojo-props="required:true, missingMessage:'请填写组织名称！'" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                类型:
+            </td>
+            <td>
+                <select data-dojo-attach-point="policeType_node" data-dojo-type="dijit.form.FilteringSelect"
+                    data-dojo-props="required:false">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                级别:
+            </td>
+            <td>
+                <select data-dojo-attach-point="orgLevel_node" data-dojo-type="dijit.form.FilteringSelect"
+                    data-dojo-props="required:false">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                序号:
+            </td>
+            <td>
+                <input data-dojo-attach-point="orderNumber_node" data-dojo-type="dijit.form.TextBox" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                值班电话:
+            </td>
+            <td>
+                <input data-dojo-attach-point="tel_node" data-dojo-type="dijit.form.TextBox" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                有效性:
+            </td>
+            <td>
+                <select data-dojo-type="dijit.form.Select" data-dojo-attach-point="valid_node">
+                    <option value="1">有效 </option>
+                    <option value="0">无效 </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                备注:
+            </td>
+            <td>
+                <textarea data-dojo-attach-point="memo_node" style="width: 400px; height: 100px"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,78 @@
+﻿
+<div>
+    <table cellspacing="15" cellpadding="0" border="0" style="width: 100%">
+        <tr>
+            <td>
+                <span style="font-weight: bold;">时间:</span>
+            </td>
+            <td>
+
+                <div>
+                    <input data-dojo-type='egis/Share/component/DateTime/DateTimeInfoTextBox' 
+                        data-dojo-props='popupConfig: {title: "选择警情发生时间"}, hasPeriods: false' style="height: 24px;" data-dojo-attach-point='dateTimeInfoTextBox' />
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div data-dojo-type='egis/Share/component/DateTime/DateTimeInfoShortcutText' data-dojo-attach-point='dateTimeInfoShortcutText'>
+                </div>
+                    
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-weight: bold;">类型:</span>
+          </td><td>          
+            <div>
+                <input data-dojo-type='egis/Share/component/CaseTree/CaseTypeTextBox'
+                   style="height: 24px;" data-dojo-props='' data-dojo-attach-point='caseTypeTextBox' />
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div data-dojo-type='egis/Share/component/CaseTree/CaseTypeShortcutText' data-dojo-attach-point='caseTypeShortcutText'>
+                </div>
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span style="font-weight: bold;">机构:</span>
+          </td><td>          
+                <div>
+                    <input data-dojo-type='egis/Share/component/OrgTree/OrganizationTextBox'
+                       style="height: 24px;" data-dojo-props='' data-dojo-attach-point='organizationTextBox' />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div data-dojo-type='egis/Share/component/OrgTree/OrganizationShortcutText' data-dojo-attach-point='organizationShortcutText'>
+                </div>
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>
+                    <label>
+                    <input type="checkbox" data-dojo-attach-point="CK_CASE_SD" checked />&nbsp;撒点</label>
+                                    <label>
+                            <input type="checkbox" data-dojo-attach-point="CK_CASE_RD" checked/>&nbsp;热点</label>
+                     <!-- <label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" data-dojo-attach-point="CK_CASE_HBSSYJ"/>环比四色预警</label> -->
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+@startuml 灾害分析
+class CaseInfoServiceImpl implements CaseInfoService {
+    +getCaseInfoStat()
+    +getCaseFor24Line()
+    +getCaseInfoList()
+    +getCaseDetailInfo()
+    +getCaseTypeCount()
+    +getCaseTypeCountDetail()
+}
+class CaseInfoController  {
+    +getCaseInfoStat()
+    +getCaseFor24Line()
+    +getCaseInfoList()
+    +getCaseDetailInfo()
+    +getCaseTypeCount()
+    +getCaseTypeCountDetail()
+}
+class CaseStatEntity{
+    String id
+    String[] legend
+    String name
+}
+class CaseSumEntity{
+    String id
+    String code
+    String name
+}
+CaseInfoController --> CaseInfoService
+CaseStatEntity "1" *-- "many" CaseSumEntity : children
+@enduml

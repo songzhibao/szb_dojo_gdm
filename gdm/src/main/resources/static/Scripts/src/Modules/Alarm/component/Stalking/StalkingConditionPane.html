@@ -1,0 +1,60 @@
+<div class="dojoxFloatingPane">
+    <div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoattachpoint="focusNode">
+        <span dojoattachpoint="closeNode" dojoattachevent="onclick: close" class="mapFloatingCloseIcon"></span>
+        <span dojoattachpoint="maxNode" dojoattachevent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+        <span dojoattachpoint="restoreNode" dojoattachevent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>
+        <span dojoattachpoint="dockNode" dojoattachevent="onclick: minimize" class="mapFloatingMinimizeIcon">&thinsp;</span>
+        <span dojoattachpoint="titleNode" class="mapFloatingTitleText"></span>
+    </div>
+    <div dojoattachpoint="canvas" class="mapFloatingPaneCanvas">
+        <div dojoattachpoint="containerNode" role="region" tabindex="-1" class="${contentClass}">
+
+<div class='normal-label-textbox' style="padding-left: 20px;">
+    <span class='label'>第一层【发生区】</span>
+    <input class='textbox' data-dojo-type='dijit/form/ValidationTextBox' data-dojo-attach-point='timePursue_1' style="width:30px" />
+    <span class='label'>（分钟）</span>
+</div>
+<br />
+<div class='normal-label-textbox' style="padding-left: 20px;">
+    <span class='label'>第二层【易发区】</span>
+    <input class='textbox' data-dojo-type='dijit/form/ValidationTextBox' data-dojo-attach-point='timePursue_2' style="width:30px"/>
+    <span class='label'>（分钟）</span>
+</div>
+<br />
+<div class='normal-label-textbox' style="padding-left: 20px;">
+    <span class='label'>第三层【危险区】</span>
+    <input class='textbox' data-dojo-type='dijit/form/ValidationTextBox' data-dojo-attach-point='timePursue_3' style="width:30px"/>
+    <span class='label'>（分钟）</span>
+    <!-- <span class='label'>速&nbsp&nbsp&nbsp度</span>
+    <input class='textbox' data-dojo-type='dijit/form/ValidationTextBox' data-dojo-attach-point='speed' style="width:30px"/>
+    <span class='label'>(公里/时)</span> -->
+</div>
+<br />
+<table width="100%">
+    <tr>
+        <td>
+            <input data-dojo-attach-point="checkNodeVideo" data-dojo-type="dijit/form/CheckBox" value="Video"
+                 data-dojo-attach-event="onClick:StalkingSourceShow" />视频
+            <input data-dojo-attach-point="checkNodeDetector" data-dojo-type="dijit/form/CheckBox" value="Detector"
+                 data-dojo-attach-event="onClick:StalkingSourceShow" />物资存放点
+            <input data-dojo-attach-point="checkNodePolice" data-dojo-type="dijit/form/CheckBox" value="Police"
+                checked data-dojo-attach-event="onClick:StalkingSourceShow" />重点单位
+        </td>
+        <td>
+
+        </td>
+        <td>
+                <div dojoattachpoint="brNode"  class="br-area">
+                </div>
+
+        </td>
+    </tr>
+</table>
+
+
+
+
+        </div>
+        <span dojoattachpoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+    </div>
+</div>

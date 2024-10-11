@@ -1,0 +1,31 @@
+﻿<div class="dojoxFloatingPane">
+	<div style="height:20px;" tabindex="0" role="button" class="mapFloatingPaneTitle" dojoAttachPoint="focusNode">
+		<span dojoAttachPoint="closeNode" dojoAttachEvent="onclick: close" class="mapFloatingCloseIcon"></span>
+		<span dojoAttachPoint="maxNode" dojoAttachEvent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+		<span dojoAttachPoint="restoreNode" dojoAttachEvent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>	
+		
+		<span dojoAttachPoint="titleNode" class="mapFloatingTitleText"></span>
+	</div>
+
+	<div dojoAttachPoint="canvas" class="mapFloatingPaneCanvas">
+
+
+ 
+                        <div style="width:99.5%; height:100%; padding:0px;" data-dojo-type="dijit/layout/BorderContainer" 
+                                        data-dojo-props="design:'headline', gutters:false, liveSplitters:false">
+
+                                <div data-dojo-type="dijit/layout/ContentPane" 
+                                    data-dojo-props="region:'center'" style="padding:0px;">
+
+                                        <div style="height:354px;" data-dojo-attach-point="detailGrid">
+                                        </div>
+                                </div>
+                        </div>
+
+
+
+
+		<span dojoAttachPoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+
+	</div>
+</div>

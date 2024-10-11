@@ -1,0 +1,74 @@
+﻿<div class="mapFloatingPane dojoxFloatingPane analysis-floating-pane" id="${id}">
+    <div tabindex="0" role="button" class="mapFloatingPaneTitle" dojoattachpoint="focusNode">
+        <span dojoattachpoint="closeNode" dojoattachevent="onclick: close" class="mapFloatingCloseIcon"></span>
+        <span dojoattachpoint="maxNode" dojoattachevent="onclick: maximize" class="mapFloatingMaximizeIcon">&thinsp;</span>
+        <span dojoattachpoint="restoreNode" dojoattachevent="onclick: _restore" class="mapFloatingRestoreIcon">&thinsp;</span>
+        <span dojoattachpoint="dockNode" dojoattachevent="onclick: minimize" class="mapFloatingMinimizeIcon">&thinsp;</span>
+        <span dojoattachpoint="titleNode" class="mapFloatingTitleText"></span>
+        <span dojoattachpoint='shortCutContainerNode' class="shortcut-container"></span>
+    </div>
+    <div dojoattachpoint="canvas" style="width: 100%; height: 80%; padding: 0px;" class="mapFloatingPaneCanvas">
+        <div dojoattachpoint="containerNode" style="width: 100%; height: 100%; padding: 0px;" role="region" tabindex="-1" class="${contentClass}">
+            <div style="width: 100%; height: 100%; padding: 0px;" data-dojo-type="dijit/layout/BorderContainer"
+                data-dojo-props="design:'headline', gutters:true, liveSplitters:false">
+                <div data-dojo-type="dijit/layout/ContentPane" style="width: 100%; padding: 0px;" data-dojo-attach-point="topNode" data-dojo-props="region:'leading'">
+
+                    <table style="width: 100%; border: 1px">
+                        <tr>
+                            <td>
+                                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="PointButton"
+                                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/Region/guardPoint.png',
+                    pressedImg: '/Content/themes/blue/images/Region/unGuardPoint.png',enableToggle:true,text:'保障点'">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="LineButton"
+                                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/Region/lineregion.png',
+                    pressedImg: '/Content/themes/blue/images/Region/unlineregion.png',enableToggle:true,text:'保障路段'">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="AreaButton"
+                                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/Region/arearegion.png',
+                    pressedImg: '/Content/themes/blue/images/Region/unarearegion.png',enableToggle:true,text:'保障圈'">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="RectButton"
+                                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/Region/rect-1.png',
+                    pressedImg: '/Content/themes/blue/images/Region/rect-2.png',enableToggle:true,text:'矩形'">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="CirButton"
+                                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/Region/cir-1.png',
+                    pressedImg: '/Content/themes/blue/images/Region/cir-2.png',enableToggle:true,text:'圆形'">
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+        <span dojoattachpoint="resizeHandle" class="dojoxFloatingResizeHandle"></span>
+    </div>
+    <div dojoattachpoint="bottomBoxNode">
+        <div dojoattachpoint="blNode" class="bl-area">
+        </div>
+        <div dojoattachpoint="brNode"  class="br-area">
+        </div>
+        <!--<div style="clear: both;"></div>-->
+    </div>
+</div>

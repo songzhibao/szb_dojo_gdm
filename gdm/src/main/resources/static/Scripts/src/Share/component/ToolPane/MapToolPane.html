@@ -1,0 +1,54 @@
+﻿<div id="${id}">
+    <div class="ui3-control-wrap"  id="ui3_control_wrap">
+<!--        <div class="citychangeopt ui3-city-change-wrap ui3-city-change-click" id="ui3_city_change">            
+            <a href="#" data-dojo-attach-point="util_police" onclick="return false" class="ui3-city-change-inner ui3-control-shadow"><span>&nbsp;&nbsp;</span><span>警力</span><em  data-dojo-attach-point="util_police_em"></em></a>
+        </div>-->
+        <div class="left float-l">
+            <b class="tool-gap"></b>
+            <div class="trafficopt" data-dojo-attach-point="util_traffic"><span  class="last traffic active-mark"></span><i class="">路况</i></div>
+            <b></b>
+            <div class="boxopt" data-dojo-attach-point="util_control"><span id="util_control"  class="boxutils boxicon"></span><i class="boxtext">工具</i><em  data-dojo-attach-point="util_traffic_em"></em></div>
+        
+            <div class="detail-box"  data-dojo-attach-point="util_traffic_detail" style="display: none;">
+                <ul id="boxul" class="boxinfo">
+                    <li class="map-measure" data-dojo-attach-point="util_control_measure"><span class="last measure"></span><i>测距</i></li>
+                    <li class="map-mark" data-dojo-attach-point="util_control_mark"><span class="last mark"></span><i>标记</i></li>
+                    <li class="map-share"  data-dojo-attach-point="util_control_share"><span class="last share"></span><i>清除</i></li>
+                </ul>
+            </div>
+        </div>
+            <div class="police-box"  data-dojo-attach-point="util_police_detail" style="display: none;">
+               <table cellspacing="10" cellpadding="5" border="0" style="width:100%">
+                   <tr><td>
+                       <label><input type="checkbox" data-dojo-attach-point="util_police_car" checked value="car" />&nbsp;警车</label>
+                       </td><td>
+                           <label><input type="checkbox" data-dojo-attach-point="util_police_man" checked value="man" />&nbsp;手台</label>
+                       </td><td>
+                           <label><input type="checkbox" data-dojo-attach-point="util_police_JWT" value="JWT" />&nbsp;警务通</label>
+                            </td></tr>
+                   <tr><td>
+                       <label><input type="checkbox" data-dojo-attach-point="util_police_BB" value="1" />&nbsp;报备</label>
+                       </td><td>
+                           <label><input type="checkbox" data-dojo-attach-point="util_police_CJ" value="8,9" />&nbsp;出警</label>
+                       </td><td>
+                           <label><input type="checkbox" data-dojo-attach-point="util_police_ZX" value="1" />&nbsp;在线</label>
+                            </td></tr>
+                   <tr>
+              <td>
+                单位:
+            </td>
+            <td colspan="2">
+               <input data-dojo-attach-point="orgName" data-dojo-type="dijit/form/TextBox" data-dojo-props="readonly:true"  style="width:40px;"/>
+                <button dojoType="dijit/form/DropDownButton" >
+                    <div dojoType="dijit/TooltipDialog">
+                        <div data-dojo-attach-point="orgNode"></div>
+                    </div>
+                </button>
+                <div data-dojo-attach-point="clearButton" data-dojo-type="dijit/form/Button">清除</div>
+            </td>
+                   </tr>
+               </table>
+            </div>
+    </div>
+
+</div>

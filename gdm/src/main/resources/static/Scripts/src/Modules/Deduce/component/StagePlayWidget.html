@@ -1,0 +1,25 @@
+﻿<div class='${baseClass} ${class}'>
+    <table cellspacing="20" cellpadding="5" border="0" style="width: 100%; padding: 0px;">
+        <tr>
+            <td>名称:
+            </td>
+            <td>
+                <input dojoattachpoint="ItemName" data-dojo-type="dijit/form/TextBox" style="width: 145px;height: 24px;" />
+            </td>
+        </tr>                                    
+        <tr>
+            <td>
+                速度:
+            </td>
+            <td>
+                <input dojoType="dijit/form/NumberSpinner" value="20" smallDelta="5" style="width: 50px;height: 24px;"    
+                    constraints="{min:1,max:120,places:0}" dojoattachpoint="ItemSpinner" /> 
+            </td> 
+        </tr>
+    </table>
+    <div style="text-align: center;">
+        <div dojoattachpoint="playButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">播 放</div>
+        <div dojoattachpoint="stopButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">停 止</div>
+        <div dojoattachpoint="cancelButton" data-dojo-type="dijit/form/Button" style="float: center; padding-right: 10px">取 消</div>
+    </div>
+</div>

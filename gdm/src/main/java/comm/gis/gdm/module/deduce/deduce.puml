@@ -1,0 +1,67 @@
+@startuml 决策支持
+class DeduceServiceImpl implements DeduceService {
+    +deleteDeduceRegion()
+    +deleteDeducePoint()
+    +deleteDeduceTask()
+    +saveTaskInfo()
+    +savePointInfo()
+    +saveRegionInfo()
+    +saveRegionEdit()
+    +getDeduceTasks()
+    +getDeducePoints()
+    +getDeduceRegoions()
+    +getDeducePlayInfo()
+    +getDeducePointTree()
+}
+class DeduceController  {
+    +deleteDeduceRegion()
+    +deleteDeducePoint()
+    +deleteDeduceTask()
+    +saveTaskInfo()
+    +savePointInfo()
+    +saveRegionInfo()
+    +saveRegionEdit()
+    +getDeduceTasks()
+    +getDeducePoints()
+    +getDeduceRegoions()
+    +getDeducePlayInfo()
+    +getDeducePointTree()
+}
+class DeduceTaskEntity{
+    String id
+    String name
+    String type
+    Integer status
+    Timestamp beginTime
+    Timestamp endTime
+}
+class DeduceRegionEntity{
+    String id
+    String taskId
+    String name
+    Integer stage
+    String content
+}
+class DeducePointEntity{
+    String id
+    String taskId
+    String type
+    String name
+    Integer stage
+    Double lon
+    Double lat
+    String action
+}
+class DeducePoliceEntity{
+    String id
+    String code
+    String job
+    String name
+    String phone
+    String taskId
+    Long guaId
+}
+DeduceController --> DeduceService
+DeduceRegionEntity "1" *-- "many" DeducePoliceEntity : children
+DeducePointEntity "1" *-- "many" DeducePoliceEntity : children
+@enduml

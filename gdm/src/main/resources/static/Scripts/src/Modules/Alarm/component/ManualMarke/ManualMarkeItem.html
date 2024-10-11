@@ -1,0 +1,29 @@
+﻿<div class='${baseClass} ${class}'>
+    <button type="button" dojoattachpoint="LocateButton" width="100%" style="background-color: #fff;border: 0px">
+        <table style="width:100%;height:40px;border-bottom-style:ridge">
+          <tr>
+             <td rowspan="2"  style="width:32px;padding-left:3px;padding-right:3px;">
+                <img dojoattachpoint="statusButton"  src="/Content/themes/blue/images/manual/offlocation.png" >
+            </td>
+            <td  style="width:90%">
+                <b><span dojoattachpoint="caseaddress" style="color:#0000ff;float:left" ></span></b>
+            </td>
+            <td rowspan="2"  >
+                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="locationButton"  style="width:32px"
+                    data-dojo-props="unpressedImg:'/Content/themes/blue/images/manual/location.png'">
+                </div>
+            </td>
+            <td rowspan="2"  >
+                <div data-dojo-type="egis/Share/component/Button/ImageButton" dojoattachpoint="closeButton" style="width:32px"
+                     data-dojo-props="unpressedImg:'/Content/themes/blue/images/manual/delete.png'">
+                </div>
+            </td>
+          </tr>
+          <tr >
+            <td>
+                <span dojoattachpoint="casecode" style="float:left" >单号：</span>
+            </td>
+          </tr>
+        </table>
+    </button>
+</div>
