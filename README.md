@@ -74,20 +74,20 @@ create extension postgis;
 
 下面是该设计的系统功能结构图
 
-![输入图片说明](data/%E5%9F%BA%E4%BA%8EGIS%E7%9A%84%E5%9C%B0%E8%B4%A8%E7%81%BE%E5%AE%B3%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/%E5%9F%BA%E4%BA%8EGIS%E7%9A%84%E5%9C%B0%E8%B4%A8%E7%81%BE%E5%AE%B3%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F.png)
 
 系统主界面
-![输入图片说明](data/ecdf2815c6dfe9c46f05bec3ff2720f.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/ecdf2815c6dfe9c46f05bec3ff2720f.png)
 
 灾害推演界面
-![输入图片说明](data/ff79f3efd9ea69ae69b6192ca19f2f7.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/ff79f3efd9ea69ae69b6192ca19f2f7.png)
 
 灾害热点分析界面
-![输入图片说明](data/6b349c1c243733ee98b43817ca8546c.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/6b349c1c243733ee98b43817ca8546c.png)
 
 灾害统计梳理界面
-![输入图片说明](data/f487c925c81073631d997f05a4dab35.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/f487c925c81073631d997f05a4dab35.png)
 
 另外，我还整理了，毕业设计需要的资料。 例如 系统概要设计、系统接口文档、各个功能点流程和实体标设计 以及 系统结构图和技术路线图等资料，有需要的朋友可以扫描下面二维码联系我们！
 
-![输入图片说明](data/fbc93bd2101e28c084a918fe66c624c.png)
+![输入图片说明](https://github.com/songzhibao/szb_dojo_gdm/blob/main/data/fbc93bd2101e28c084a918fe66c624c.png)
